@@ -1,0 +1,129 @@
+<ngb-tabset>
+  <ngb-tab title="Sarees">
+    <ng-template ngbTabContent>
+      <span *ngFor="let tabSaree of pSaree;let i=index;">
+      <div class="product_box" >
+        <div class="thumb_wrapper">
+          <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}};">
+            <img [src]="'//' +tabSaree.imagePath" alt="{{tabSaree.productTitle}}" title="{{tabSaree.productTitle}}" height="240" width="200">
+          </a>
+          <p class="pro-info">{{tabSaree.productTitle | slice:0:18}}
+            <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}}" style="color:red;">Read More</a>
+          </p>
+          <div class="price_tag">{{tabSaree.price | currency:'INR':true}}</div>
+        </div>
+      </div>
+      <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+        </span>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab>
+    <ng-template ngbTabTitle>Suit Salvar</ng-template>
+    <ng-template ngbTabContent>
+      <span *ngFor="let tabSuit of pSuit;let i=index;">
+        <div class="product_box">
+          <div class="thumb_wrapper">
+            <a routerLink="{{tabSuit.url}}" title="{{tabSuit.productTitle}};">
+              <img [src]="'//' +tabSuit.imagePath" alt="{{tabSuit.productTitle}}" title="{{tabSuit.productTitle}}"
+                   height="240" width="200">
+            </a>
+            <p class="pro-info">{{tabSuit.productTitle | slice:0:18}}
+              <a routerLink="{{tabSuit.url}}" title="{{tabSuit.productTitle}}" style="color:red;">Read More</a>
+            </p>
+            <div class="price_tag">{{tabSuit.price | currency:'INR':true}}</div>
+          </div>
+        </div>
+        <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+    </span>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Lengha">
+    <ng-template ngbTabContent>
+      <span *ngFor="let tabLengha of pLengha;let i=index;">
+        <div class="product_box">
+          <div class="thumb_wrapper">
+            <a routerLink="{{tabLengha.url}}" title="{{tabLengha.productTitle}};">
+              <img [src]="'//' +tabLengha.imagePath" alt="{{tabLengha.productTitle}}" title="{{tabLengha.productTitle}}"
+                   height="240" width="200">
+            </a>
+            <p class="pro-info">{{tabLengha.productTitle | slice:0:18}}
+              <a routerLink="{{tabLengha.url}}" title="{{tabLengha.productTitle}}" style="color:red;">Read More</a>
+            </p>
+            <div class="price_tag">{{tabLengha.price | currency:'INR':true}}</div>
+          </div>
+        </div>
+        <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+    </span>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
+<!--<ng2-tab
+  selected="saree"
+  selected-index-class="selected"
+  selected-contents-class="fadeIn animated">
+  <div class="tabs" id="tabs">
+    <div index="saree">Sarees</div>
+    <div index="suit">Suit Salvar</div>
+    <div index="lengha">Lengha</div>
+  </div>
+  <div class="tab-contents">
+
+    &lt;!&ndash;Saree Start&ndash;&gt;
+    <div class="tab_cont" contents="saree">
+      <span *ngFor="let tabSaree of pSaree;let i=index;">
+      <div class="product_box" >
+        <div class="thumb_wrapper">
+          <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}};">
+            <img [src]="'//' +tabSaree.imagePath" alt="{{tabSaree.productTitle}}" title="{{tabSaree.productTitle}}" height="240" width="200">
+          </a>
+          <p class="pro-info">{{tabSaree.productTitle | slice:0:18}}
+            <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}}" style="color:red;">Read More</a>
+          </p>
+          <div class="price_tag">{{tabSaree.price | currency:'INR':true}}</div>
+        </div>
+      </div>
+      <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+        </span>
+    </div>
+
+    &lt;!&ndash;Suit Start&ndash;&gt;
+    <div class="tab_cont" contents="suit">
+     <span *ngFor="let tabSuit of pSuit;let i=index;">
+        <div class="product_box">
+          <div class="thumb_wrapper">
+            <a routerLink="{{tabSuit.url}}" title="{{tabSuit.productTitle}};">
+              <img [src]="'//' +tabSuit.imagePath" alt="{{tabSuit.productTitle}}" title="{{tabSuit.productTitle}}"
+                   height="240" width="200">
+            </a>
+            <p class="pro-info">{{tabSuit.productTitle | slice:0:18}}
+              <a routerLink="{{tabSuit.url}}" title="{{tabSuit.productTitle}}" style="color:red;">Read More</a>
+            </p>
+            <div class="price_tag">{{tabSuit.price | currency:'INR':true}}</div>
+          </div>
+        </div>
+        <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+    </span>
+    </div>
+
+
+    &lt;!&ndash;Suit Start&ndash;&gt;
+    <div class="tab_cont" contents="lengha">
+       <span *ngFor="let tabLengha of pLengha;let i=index;">
+        <div class="product_box">
+          <div class="thumb_wrapper">
+            <a routerLink="{{tabLengha.url}}" title="{{tabLengha.productTitle}};">
+              <img [src]="'//' +tabLengha.imagePath" alt="{{tabLengha.productTitle}}" title="{{tabLengha.productTitle}}"
+                   height="240" width="200">
+            </a>
+            <p class="pro-info">{{tabLengha.productTitle | slice:0:18}}
+              <a routerLink="{{tabLengha.url}}" title="{{tabLengha.productTitle}}" style="color:red;">Read More</a>
+            </p>
+            <div class="price_tag">{{tabLengha.price | currency:'INR':true}}</div>
+          </div>
+        </div>
+        <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
+    </span>
+    </div>
+
+  </div>
+</ng2-tab>-->

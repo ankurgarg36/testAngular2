@@ -1,0 +1,17 @@
+<header>
+  <div class="container_12">
+    <div style="margin:10px 0px 0px 0px;">
+      <img src="../../../../assets/images/logo.jpeg" alt="wholesalesarees logo" style="height:120px;"></div>
+    <div class="menu_block">
+      <nav>
+        <ul class="sf-menu">
+          <li *ngFor="let menu of menuLinks">
+            <a  [routerLink]="menu.url" routerLinkActive="current" >{{menu.text}}</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>

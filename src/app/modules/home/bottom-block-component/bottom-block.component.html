@@ -1,0 +1,25 @@
+<div class="bottom_block">
+  <div class="container_12">
+  <div class="grid_2 prefix_2">
+    <ul>
+      <li *ngFor="let fFink1 of footerLinks1"><a  [routerLink]="fFink1.url">{{fFink1.text}}</a></li>
+    </ul>
+  </div>
+  <div class="grid_2">
+    <ul>
+      <li *ngFor="let fFink2 of footerLinks2"><a  [routerLink]="fFink2.url">{{fFink2.text}}</a></li>
+    </ul>
+  </div>
+  <div class="grid_2">
+    <ul>
+      <li *ngFor="let fFink3 of footerLinks3"><a  [routerLink]="fFink3.url">{{fFink3.text}}</a></li>
+    </ul>
+  </div>
+  <div class="grid_2">
+    <h4>Contact Us:</h4>
+    TEL: 1-800-234-5678<br><a href="#">info@demolink.org</a>
+
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
