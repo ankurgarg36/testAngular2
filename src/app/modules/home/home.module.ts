@@ -12,6 +12,7 @@ import {TopArrivalComponent} from './top-arrival-component/top-arrival.component
 import {APP_CONFIG, AppConfig} from '../../app-config.constants';
 import {HomeTabComponent} from './home-tab-component/home-tab.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {ProductModule} from '../product/product.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ProductModule,
     HomeRoutingModule,
     NgbModule.forRoot(),
     ReactiveFormsModule

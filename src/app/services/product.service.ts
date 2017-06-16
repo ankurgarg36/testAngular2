@@ -10,6 +10,7 @@ import {Observable} from 'rxjs/Observable';
 import {ProductMaterialResponse} from '../response/product-material.response';
 import {ProductColorResponse} from '../response/product-color.response';
 import {IAppConfig} from '../app-config.interface';
+import {SearchBasedProductResponse} from '../response/search-based-product.response';
 
 @Injectable()
 export class ProductService {
@@ -31,7 +32,7 @@ export class ProductService {
         .catch(this.handleError);
   }
 
-  getProduct(category: string, code: string): Observable<ProductResponse> {
+  getProduct(category: string, code: any): Observable<any> {
     const parameters = new URLSearchParams();
     parameters.set('category', category);
     parameters.set('code', code);
@@ -53,6 +54,18 @@ export class ProductService {
     parameters.set('product_type', type);
     return this.http.get(this.config.apiEndpoint + 'color.php', {search: parameters})
         .map((response: Response) => <ProductColorResponse>response.json().data)
+        .catch(this.handleNewError);
+  }
+
+
+  getSearchBasedProducts(category, material= null, color= null, price= null): Observable<SearchBasedProductResponse> {
+    const parameters = new URLSearchParams();
+    parameters.set('category', category);
+    parameters.set('material', material);
+    parameters.set('color', color);
+    parameters.set('price', price);
+    return this.http.get(this.config.apiEndpoint + 'search-based-products.php', {search: parameters})
+        .map((response: Response) => <SearchBasedProductResponse>response.json().data)
         .catch(this.handleNewError);
   }
 

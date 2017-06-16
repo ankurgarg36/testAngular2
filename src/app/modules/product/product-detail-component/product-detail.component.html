@@ -1,0 +1,122 @@
+<div class="container_12">
+  <div class="grid_12" *ngIf="product!=null">
+    <h3>{{product.productTitle}}</h3>
+
+    <div class="tours gallery" >
+      <div class="grid_12 alpha">
+        <div class="zoom-section">
+          <div class="zoom-small-image">
+            <a [href]="'//' +product.imagePath" class='cloud-zoom' rel="tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10">
+              <img [src]="'//' +product.imagePath" alt="{{product.productTitle}}" title="{{product.productTitle}}" height="480" width="320">
+              </a>
+          </div>
+          <div class="zoom-desc"></div>
+        </div>
+        <!--zoom-section end-->
+
+        <div class="tour">
+          <div class="extra_wrapper">
+            <p class="text1">{{product.productTitle}}</p>
+            <p class="price">Product Code:<span>{{product.productCode}}</span></p>
+            <p class="price">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>
+            <p class="price">Material Type: <span>{{product.material}}</span></p>
+            <p class="price">Color: <span>{{product.color}}</span></p>
+            <p class="price">Purpose: <span>{{product.purpose}}</span></p>
+            <p class="price">Description: <span>{{product.detail}}</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid_12" *ngIf="productSuggestions!=null">
+        <h3>May we also suggest</h3>
+        <div class="product_box" *ngFor="let suggestion of productSuggestions;let i=index;">
+          <div class="thumb_wrapper_detail">
+            <a routerLink="{{suggestion.url}}" title="{{suggestion.productTitle}}; ">
+              <img [src]="'//' +suggestion.imagePath" alt="{{suggestion.productTitle}}" title="{{suggestion.productTitle}}" height="240" width="200">
+            </a>
+            <div class="price_inner_tag">{{product.price | currency:'INR':true}}</div>
+            <p class="pro-info">{{product.productTitle | slice:0:18}}
+              <a routerLink="{{suggestion.url}}" title="{{suggestion.productTitle}}" style="color:red;">Read More</a>
+            </p>
+          </div>
+        </div>
+        <div class="clear cl1" *ngIf="i%5==0"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+<div class="container_12">
+<div class="grid_12">
+  <h3>{{product.productTitle}}</h3>
+  <div class="tours gallery">
+    <div class="grid_12 alpha">
+      <div class="zoom-section">
+        <div class="zoom-small-image">
+          <div id="wrap" style="top:0px;z-index:9999;position:relative;">
+            <img [src]="'//' +product.imagePath" alt="{{product.productTitle}}" title="{{product.productTitle}}" height="240" width="200" class="img_inner fleft">
+            &lt;!&ndash;<a href="resize.php?w=768&amp;h=1024&amp; img=uploads/saree/100000001@s35.jpg" class="cloud-zoom" rel="tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10" style="position: relative; display: block;"><img src="resize.php?w=320&amp;h=480&amp;img=uploads/saree/100000001@s35.jpg" title="Saffon Simple Saree" alt="Saffon Simple Saree" style="display: block;"></a><div class="mousetrap" style="background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 320px; height: 480px; left: 0px; top: 0px; cursor: move;"></div></div>&ndash;&gt;
+        </div>
+        <div class="zoom-desc">
+        </div>
+      </div>
+
+      <div class="tour">
+        <div class="extra_wrapper">
+          <p class="text1">Saffon Simple Saree</p>
+          <p class="price">Product Code:<span>{{product.productCode}}</span></p>
+          <p class="price">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>
+          <p class="price">Material Type: <span>{{product.material}}</span></p>
+          <p class="price">Color: <span>{{product.color}}</span></p>
+          <p class="price">Purpose: <span>{{product.purpose}}</span></p>
+          <p class="price">Description: <span>{{product.detail}}</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid_12">
+      <h3>May we also suggest</h3>
+      <div class="product_box">
+        <div class="thumb_wrapper_detail">
+          <a href="index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010">
+            <img src="resize.php?w=200&amp;h=240&amp;img=uploads/saree/100000010@s43.jpg" title="Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection" alt="Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection">
+          </a>
+          <div class="price_inner_tag">Rs. 8,500.00</div>
+          <p class="pro-info">Black and Cream Colour Chiffon Material  <a href="index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010" style="color:red;">Read More..</a></p>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</div>
+</div>
+-->

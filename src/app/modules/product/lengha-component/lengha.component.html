@@ -1,0 +1,63 @@
+<div class="container_12">
+  <div class="grid_9">
+    <h3 *ngIf="searchTerm==null">LENGHA-CHUNNI</h3>
+    <h3 *ngIf="searchTerm">{{searchTerm|uppercase}}</h3>
+
+    <div class="tours gallery">
+      <div class="grid_4" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;" [ngClass]="{'omega':isEven==true,'alpha':isEven==false}">
+        <div class="tour">
+          <a routerLink="{{product.url}}" title="{{product.productTitle}}">
+            <img [src]="'//' +product.imagePath" alt="{{product.productTitle}}" title="{{product.productTitle}}" height="240" width="200" class="img_inner fleft">
+          </a>
+          <div class="extra_wrapper">
+            <p class="text1">{{product.productTitle | slice:0:18}}....</p>
+            <p class="price">{{product.purpose}}</p>
+            <p class="price">Best Price <span>{{product.price | currency:'INR':true}}</span></p>
+            <a routerLink="{{product.url}}" class="btn">Details</a>
+          </div>
+        </div>
+        <div class="clear" *ngIf="isEven==false"></div>
+      </div>
+    </div>
+    <div class='no_product' *ngIf="products.length==0">There are no products in this collection.</div>
+    <div class="pages" style="clear: both;">
+      <pagination-controls (pageChange)="p = $event" #api *ngIf="products.length>10"></pagination-controls>
+    </div>
+  </div>
+
+  <div class="grid_3">
+    <h3>SEARCH LENGHA-CHUNNI</h3>
+    <form method="post" id="form2" class="form1">
+      <label for="productMaterial">
+            <span class="col1">All Search Operators</span><br>
+        <span>Material</span>
+        <select [(ngModel)]="selectedMaterial" id="productMaterial" (ngModelChange)="materialFilter($event)" name="sel1">
+          <option value=""  selected>Select Material</option>
+          <option *ngFor="let pm of productMaterial"
+                  [value]="pm.id" >{{pm.materialType}}</option>
+        </select>
+        <!--<select [(ngModel)]="selectedMaterial" name="selectedMaterial"  id="productMaterial">
+          <option *ngFor="let pm of productMaterial" [value]="pm.id" >{{pm.materialType}}</option>
+        </select>-->
+      </label>
+      <label for="productColor">
+        <span>Color</span>
+        <select [ngModel]="selectedColor" id="productColor" (ngModelChange)="colorFilter($event)" name="sel2">
+          <option value="" selected>Select Color</option>
+          <option *ngFor="let pc of productColor"
+                  [value]="pc.id" >{{pc.color}}</option>
+        </select>
+      </label>
+      <label>
+        <span>Price</span>
+        <select [ngModel]="selectedPrice" id="productPrice" (ngModelChange)="priceFilter($event)" name="sel3">
+          <option value="" selected>Select Pice</option>
+          <option *ngFor="let pp of productPrice"
+                  [value]="pp.range" >{{pp.text}}</option>
+        </select>
+      </label>
+      <div class="clear"></div>
+    </form>
+  </div>
+  <div class="clear"></div>
+</div>
