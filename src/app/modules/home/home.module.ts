@@ -1,9 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpModule} from '@angular/http';
 
-import { AppComponent } from './app-component/app.component';
+import {AppComponent} from './app-component/app.component';
 import {HomeRoutingModule, routedComponents} from './home-routing.module';
 import {HeaderComponent} from './header-component/header.component';
 import {FooterComponent} from './footer-component/footer.component';
@@ -17,12 +17,12 @@ import {ProductModule} from '../product/product.module';
 @NgModule({
   declarations: [
     AppComponent,
-      HeaderComponent,
-      FooterComponent,
+    HeaderComponent,
+    FooterComponent,
     BottomBlockComponent,
     TopArrivalComponent,
     routedComponents,
-      HomeTabComponent
+    HomeTabComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,8 @@ import {ProductModule} from '../product/product.module';
     NgbModule.forRoot(),
     ReactiveFormsModule
   ],
-  providers: [{provide: APP_CONFIG, useValue : AppConfig}],
+  providers: [{provide: APP_CONFIG, useValue: AppConfig}],
   bootstrap: [AppComponent]
 })
-export class HomeModule { }
+export class HomeModule {
+}
