@@ -16,14 +16,14 @@ export class HomeTabComponent implements OnInit {
   constructor(private _productService: ProductService) {}
 
   ngOnInit(): void {
-    this._productService.getProducts('saree', 10).then(pResponse => {
-      this.pSaree = pResponse;
+    this._productService.getProducts('saree', 10, 1).then(pResponse => {
+      this.pSaree = pResponse.data;
     });
-    this._productService.getProducts('suit', 10).then(pResponse => {
-      this.pSuit = pResponse;
+    this._productService.getProducts('suit', 10, 1).then(pResponse => {
+      this.pSuit = pResponse.data;
     });
-    this._productService.getProducts('lengha', 10).then(pResponse => {
-      this.pLengha = pResponse;
+    this._productService.getProducts('lengha', 10, 1).then(pResponse => {
+      this.pLengha = pResponse.data;
     });
   }
 
