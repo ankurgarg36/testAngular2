@@ -12,7 +12,7 @@ webpackJsonp([1,5],{
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_product_service__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SareesComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -117,7 +117,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_interface__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__app_config_interface__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeService; });
@@ -198,7 +198,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -349,7 +349,7 @@ AppComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BottomBlockComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -388,7 +388,7 @@ BottomBlockComponent = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_home_service__ = __webpack_require__(160);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -476,7 +476,7 @@ FooterComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -634,6 +634,7 @@ var routedComponents = [__WEBPACK_IMPORTED_MODULE_2__home_component_home_compone
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_product_service__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_constants__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeTabComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -646,21 +647,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HomeTabComponent = (function () {
     function HomeTabComponent(_productService) {
         this._productService = _productService;
+        this.productCategory = __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */];
     }
     HomeTabComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this._productService.getProducts('saree', 10, 1).then(function (pResponse) {
+        this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
             _this.pSaree = pResponse.data;
         });
-        this._productService.getProducts('suit', 10, 1).then(function (pResponse) {
-            _this.pSuit = pResponse.data;
-        });
-        this._productService.getProducts('lengha', 10, 1).then(function (pResponse) {
-            _this.pLengha = pResponse.data;
-        });
+    };
+    HomeTabComponent.prototype.getProducts = function (config) {
+        var _this = this;
+        if (config.nextId === __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree) {
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+                _this.pSaree = pResponse.data;
+            });
+        }
+        if (config.nextId === __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].suit) {
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+                _this.pSuit = pResponse.data;
+            });
+        }
+        if (config.nextId === __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].lengha) {
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+                _this.pLengha = pResponse.data;
+            });
+        }
     };
     return HomeTabComponent;
 }());
@@ -692,7 +707,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_component_footer_component__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bottom_block_component_bottom_block_component__ = __webpack_require__(228);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_arrival_component_top_arrival_component__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_tab_component_home_tab_component__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng_bootstrap_ng_bootstrap__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__product_product_module__ = __webpack_require__(241);
@@ -833,7 +848,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_product_service__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LenghaComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1096,7 +1111,7 @@ ProductModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_product_service__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuitSalvarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1314,7 +1329,7 @@ module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <
 /***/ 312:
 /***/ (function(module, exports) {
 
-module.exports = "<ngb-tabset>\n  <ngb-tab title=\"Sarees\">\n    <ng-template ngbTabContent>\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\" >\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\" height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n    </ng-template>\n  </ngb-tab>\n  <ngb-tab>\n    <ng-template ngbTabTitle>Suit Salvar</ng-template>\n    <ng-template ngbTabContent>\n      <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </ng-template>\n  </ngb-tab>\n  <ngb-tab title=\"Lengha\">\n    <ng-template ngbTabContent>\n      <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </ng-template>\n  </ngb-tab>\n</ngb-tabset>\n<!--<ng2-tab\n  selected=\"saree\"\n  selected-index-class=\"selected\"\n  selected-contents-class=\"fadeIn animated\">\n  <div class=\"tabs\" id=\"tabs\">\n    <div index=\"saree\">Sarees</div>\n    <div index=\"suit\">Suit Salvar</div>\n    <div index=\"lengha\">Lengha</div>\n  </div>\n  <div class=\"tab-contents\">\n\n    &lt;!&ndash;Saree Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"saree\">\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\" >\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\" height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n    </div>\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"suit\">\n     <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"lengha\">\n       <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n  </div>\n</ng2-tab>-->\n"
+module.exports = "<ngb-tabset (tabChange)=\"getProducts($event)\">\n\t<ngb-tab title=\"Sarees\" [id]=\"productCategory.saree\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\">\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\"\n                 height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Suit Salvar\" [id]=\"productCategory.suit\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Lengha\" [id]=\"productCategory.lengha\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n</ngb-tabset>\n<!--<ng2-tab\n  selected=\"saree\"\n  selected-index-class=\"selected\"\n  selected-contents-class=\"fadeIn animated\">\n  <div class=\"tabs\" id=\"tabs\">\n    <div index=\"saree\">Sarees</div>\n    <div index=\"suit\">Suit Salvar</div>\n    <div index=\"lengha\">Lengha</div>\n  </div>\n  <div class=\"tab-contents\">\n\n    &lt;!&ndash;Saree Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"saree\">\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\" >\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\" height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n    </div>\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"suit\">\n     <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"lengha\">\n       <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n  </div>\n</ng2-tab>-->\n"
 
 /***/ }),
 
@@ -1370,7 +1385,7 @@ module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_9\">\n\t\t<h
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(320);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_constants__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_config_interface__ = __webpack_require__(158);
