@@ -4,7 +4,8 @@
     <h3 *ngIf="searchTerm">{{searchTerm|uppercase}}</h3>
 
     <div class="tours gallery">
-      <div class="grid_4" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;" [ngClass]="{'omega':isEven==true,'alpha':isEven==false}">
+      <div class="grid_4" *ngFor="let product of products;let isEven = even;" [ngClass]="{'omega':isEven==true,'alpha':isEven==false}">
+      <!--<div class="grid_4" *ngFor="let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;" [ngClass]="{'omega':isEven==true,'alpha':isEven==false}">-->
         <div class="tour">
           <a routerLink="{{product.url}}" title="{{product.productTitle}}">
             <img [src]="'//' +product.imagePath" alt="{{product.productTitle}}" title="{{product.productTitle}}" height="240" width="200" class="img_inner fleft">
@@ -21,7 +22,9 @@
     </div>
     <div class='no_product' *ngIf="products?.length==0">There are no products in this collection.</div>
     <div class="pages" style="clear: both;">
-      <pagination-controls (pageChange)="p = $event" #api *ngIf="products?.length>10"></pagination-controls>
+      <ngb-pagination [collectionSize]="collectionSize" [maxSize]="maxSize" [pageSize]="pageSize" [(page)]="currentPage" size="lg" (pageChange)="pageChanged($event)"></ngb-pagination>
+
+      <!--<pagination-controls (pageChange)="p = $event" #api *ngIf="products?.length>10"></pagination-controls>-->
     </div>
   </div>
 

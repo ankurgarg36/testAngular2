@@ -9,7 +9,7 @@ import {ProductService} from '../../../services/product.service';
 @Component({
     moduleId: module.id,
     selector: 'lengha-component',
-    templateUrl: 'lengha.component.html'
+    templateUrl: 'lengha.component.html',
 })
 
 export class LenghaComponent implements OnInit {
@@ -23,12 +23,23 @@ export class LenghaComponent implements OnInit {
     public selectedMaterial = '';
     public selectedPrice = '';
 
+    public maxSize;  // total no of pages
+    public collectionSize; // total no of items.
+    public currentPage = 1; // default page
+    public pageSize = 10;  // no of items per page
+
     constructor(private _productService: ProductService) {
     }
-
+    public pageChanged(event: any): void {
+        this._productService.getProducts(ProductCategory.lengha, this.pageSize, event).then(pResponse => {
+            this.products = pResponse.data;
+        });
+    };
     ngOnInit(): void {
-        this._productService.getProducts(ProductCategory.lengha).then(pResponse => {
-            this.products = pResponse;
+        this._productService.getProducts(ProductCategory.lengha, this.pageSize, 1).then(pResponse => {
+            this.products = pResponse.data;
+            this.collectionSize = pResponse.totalRecords;
+            this.maxSize = Math.ceil(this.collectionSize / this.pageSize);
         });
 
         this._productService

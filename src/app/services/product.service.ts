@@ -20,14 +20,15 @@ export class ProductService {
     this.headers.append('Access-Control-Allow-Origin', 'true');
   }
 
-  getProducts(category: string, limit: any = null): Promise<ProductResponse[]> {
+  getProducts(category: string, limit: any = null, page: any = null): Promise<any> {
     const parameters = new URLSearchParams();
     parameters.set('category', category);
     parameters.set('limit', limit);
+    parameters.set('page', page);
     return this.http.get(this.config.apiEndpoint + 'products.php', {search: parameters})
         .toPromise()
         .then(response => {
-          return response.json().data as ProductResponse[];
+          return response.json();
         })
         .catch(this.handleError);
   }

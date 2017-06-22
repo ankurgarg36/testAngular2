@@ -5,10 +5,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {SareesComponent} from './sarees-component/sarees.component';
 import {productRoutedComponents, ProductRoutingModule} from './product-routing.module';
 import {ProductService} from '../../services/product.service';
-import {Ng2PaginationModule} from 'ng2-pagination';
+import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ProductRoutingModule, Ng2PaginationModule],
+  imports: [BrowserModule, FormsModule, ProductRoutingModule,
+    NgbPaginationModule.forRoot()],
   declarations: [productRoutedComponents],
   bootstrap: [SareesComponent],
   providers: [ProductService]

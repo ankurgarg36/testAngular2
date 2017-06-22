@@ -11,8 +11,9 @@ import {BottomBlockComponent} from './bottom-block-component/bottom-block.compon
 import {TopArrivalComponent} from './top-arrival-component/top-arrival.component';
 import {APP_CONFIG, AppConfig} from '../../app-config.constants';
 import {HomeTabComponent} from './home-tab-component/home-tab.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 import {ProductModule} from '../product/product.module';
+import {LoadersCssModule} from 'angular2-loaders-css';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ProductModule} from '../product/product.module';
     ProductModule,
     HomeRoutingModule,
     NgbModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LoadersCssModule
   ],
   providers: [{provide: APP_CONFIG, useValue: AppConfig}],
   bootstrap: [AppComponent]
