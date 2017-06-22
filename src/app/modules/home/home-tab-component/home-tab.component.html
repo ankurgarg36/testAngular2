@@ -1,11 +1,12 @@
-<ngb-tabset>
-  <ngb-tab title="Sarees">
-    <ng-template ngbTabContent>
+<ngb-tabset (tabChange)="getProducts($event)">
+	<ngb-tab title="Sarees" [id]="productCategory.saree">
+		<ng-template ngbTabContent>
       <span *ngFor="let tabSaree of pSaree;let i=index;">
-      <div class="product_box" >
+      <div class="product_box">
         <div class="thumb_wrapper">
           <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}};">
-            <img [src]="'//' +tabSaree.imagePath" alt="{{tabSaree.productTitle}}" title="{{tabSaree.productTitle}}" height="240" width="200">
+            <img [src]="'//' +tabSaree.imagePath" alt="{{tabSaree.productTitle}}" title="{{tabSaree.productTitle}}"
+                 height="240" width="200">
           </a>
           <p class="pro-info">{{tabSaree.productTitle | slice:0:18}}
             <a routerLink="{{tabSaree.url}}" title="{{tabSaree.productTitle}}" style="color:red;">Read More</a>
@@ -15,11 +16,10 @@
       </div>
       <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
         </span>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab>
-    <ng-template ngbTabTitle>Suit Salvar</ng-template>
-    <ng-template ngbTabContent>
+		</ng-template>
+	</ngb-tab>
+	<ngb-tab title="Suit Salvar" [id]="productCategory.suit">
+		<ng-template ngbTabContent>
       <span *ngFor="let tabSuit of pSuit;let i=index;">
         <div class="product_box">
           <div class="thumb_wrapper">
@@ -35,10 +35,10 @@
         </div>
         <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
     </span>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Lengha">
-    <ng-template ngbTabContent>
+		</ng-template>
+	</ngb-tab>
+	<ngb-tab title="Lengha" [id]="productCategory.lengha">
+		<ng-template ngbTabContent>
       <span *ngFor="let tabLengha of pLengha;let i=index;">
         <div class="product_box">
           <div class="thumb_wrapper">
@@ -54,8 +54,8 @@
         </div>
         <div class="clear cl1" *ngIf="(i+1)%5==0 && i!=0">{{i%5}}</div>
     </span>
-    </ng-template>
-  </ngb-tab>
+		</ng-template>
+	</ngb-tab>
 </ngb-tabset>
 <!--<ng2-tab
   selected="saree"
