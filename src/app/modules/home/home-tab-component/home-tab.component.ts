@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {ProductService} from '../../../services/product.service';
 import {ProductCategory} from '../../../app-config.constants';
 import {ProductResponse} from '../../../response/product.response';
@@ -10,22 +10,27 @@ import {ProductResponse} from '../../../response/product.response';
   providers: [ProductService]
 })
 
-export class HomeTabComponent implements OnInit {
+export class HomeTabComponent {
 
   public pSaree: ProductResponse;
   public pSuit: ProductResponse;
   public pLengha: ProductResponse;
 
   public productCategory: object;
+  public loadProduct: boolean;
 
   constructor(private _productService: ProductService) {
     this.productCategory = ProductCategory;
+    this.loadProduct = true;
   }
 
-  ngOnInit(): void {
-    this._productService.getProducts(ProductCategory.saree, 10, 1).then(pResponse => {
-      this.pSaree = pResponse.data;
-    });
+  @HostListener('window:scroll', ['$event']) scroll($event) {
+    if (this.loadProduct === true && ((window.innerHeight + window.scrollY) >= 1400)) {
+      this.loadProduct = false;
+      this._productService.getProducts(ProductCategory.saree, 10, 1).then(pResponse => {
+        this.pSaree = pResponse.data;
+      });
+    }
   }
 
   public getProducts(config: any): void {
@@ -35,12 +40,12 @@ export class HomeTabComponent implements OnInit {
       });
     }
     if (config.nextId === ProductCategory.suit) {
-      this._productService.getProducts(ProductCategory.saree, 10, 1).then(pResponse => {
+      this._productService.getProducts(ProductCategory.suit, 10, 1).then(pResponse => {
         this.pSuit = pResponse.data;
       });
     }
     if (config.nextId === ProductCategory.lengha) {
-      this._productService.getProducts(ProductCategory.saree, 10, 1).then(pResponse => {
+      this._productService.getProducts(ProductCategory.lengha, 10, 1).then(pResponse => {
         this.pLengha = pResponse.data;
       });
     }
