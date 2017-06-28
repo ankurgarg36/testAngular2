@@ -652,12 +652,16 @@ var HomeTabComponent = (function () {
     function HomeTabComponent(_productService) {
         this._productService = _productService;
         this.productCategory = __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */];
+        this.loadProduct = true;
     }
-    HomeTabComponent.prototype.ngOnInit = function () {
+    HomeTabComponent.prototype.scroll = function ($event) {
         var _this = this;
-        this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
-            _this.pSaree = pResponse.data;
-        });
+        if (this.loadProduct === true && ((window.innerHeight + window.scrollY) >= 1400)) {
+            this.loadProduct = false;
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+                _this.pSaree = pResponse.data;
+            });
+        }
     };
     HomeTabComponent.prototype.getProducts = function (config) {
         var _this = this;
@@ -667,18 +671,24 @@ var HomeTabComponent = (function () {
             });
         }
         if (config.nextId === __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].suit) {
-            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].suit, 10, 1).then(function (pResponse) {
                 _this.pSuit = pResponse.data;
             });
         }
         if (config.nextId === __WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].lengha) {
-            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].saree, 10, 1).then(function (pResponse) {
+            this._productService.getProducts(__WEBPACK_IMPORTED_MODULE_2__app_config_constants__["d" /* ProductCategory */].lengha, 10, 1).then(function (pResponse) {
                 _this.pLengha = pResponse.data;
             });
         }
     };
     return HomeTabComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["HostListener"])('window:scroll', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], HomeTabComponent.prototype, "scroll", null);
 HomeTabComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'home-tab',
