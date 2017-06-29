@@ -5,6 +5,7 @@ import {SareesComponent} from './sarees-component/sarees.component';
 import {ProductDetailComponent} from './product-detail-component/product-detail.component';
 import {SuitSalvarComponent} from './suit-salvar-component/suit-salvar.component';
 import {LenghaComponent} from './lengha-component/lengha.component';
+import {UploadComponent} from './upload-component/upload-component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: 'product/:product-category/:product-title/:product-code',
     component: ProductDetailComponent
   },
+  {
+    path: 'upload',
+    component: UploadComponent
+  },
 ];
 
 @NgModule({
@@ -32,4 +37,5 @@ const routes: Routes = [
 export class ProductRoutingModule {
 }
 
-export const productRoutedComponents = [SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent];
+
+export const productRoutedComponents = [ SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent, UploadComponent];

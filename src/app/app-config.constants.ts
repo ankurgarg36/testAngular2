@@ -17,6 +17,7 @@ export const MenuLinks = [
     {url: '/suit', text: 'Suit-Salvar'},
     {url: '/lengha', text: 'Lengha-Chunni'},
     {url: '/contact', text: 'Contact Us'},
+    {url: '/upload', text: 'upload'},
 ];
 
 export const ProductType = {
