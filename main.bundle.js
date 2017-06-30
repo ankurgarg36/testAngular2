@@ -1243,24 +1243,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var UploadComponent = (function () {
     function UploadComponent(canvas, img) {
-        this.width = window.innerWidth;
-        this.height = window.innerHeight;
-        this.text = 'hello uncel';
+        this.width = 400;
+        this.height = 300;
+        this.text = 'India is great';
         this.textSize = 20;
-        this.x = 20;
-        this.y = 20;
+        this.x = 200;
+        this.y = 200;
         this.dragok = false;
         this.textLength = (this.text.length * this.textSize) / 2;
     }
     UploadComponent.prototype.ngAfterViewInit = function () {
         this.ctx = this.canvas.nativeElement.getContext('2d');
         this.element = this.img.nativeElement;
-    };
-    // @HostListener('window:resize')
-    UploadComponent.prototype.resize = function () {
-        this.width = window.innerWidth;
-        this.height = window.innerHeight;
-        this.render();
     };
     UploadComponent.prototype.clear = function () {
         this.ctx.clearRect(0, 0, this.width, this.height);
@@ -1283,7 +1277,8 @@ var UploadComponent = (function () {
                 __WEBPACK_IMPORTED_MODULE_1_jquery__('#preview').attr('src', e.target.result);
             };
             reader.readAsDataURL(fileInput.target.files[0]);
-            this.resize();
+            this.showExportButton = true;
+            this.render();
         }
     };
     UploadComponent.prototype.onMouseup = function (event) {
@@ -1291,26 +1286,13 @@ var UploadComponent = (function () {
         this.canvas.nativeElement.mousemove = null;
     };
     UploadComponent.prototype.onMousemove = function (e) {
-        if (e.pageX < this.x + this.textLength + this.canvas.nativeElement.offsetLeft &&
-            e.pageX > this.x - this.textLength + this.canvas.nativeElement.offsetLeft &&
-            e.pageY < this.y + this.textSize + this.canvas.nativeElement.offsetTop &&
-            e.pageY > this.y - this.textSize + this.canvas.nativeElement.offsetTop && this.dragok) {
-            console.log(this.canvas);
-            console.log('PageX : ' + e.pageX);
-            console.log('this.x + this.textLength + this.canvas.nativeElement.offsetLeft');
-            console.log(this.x + this.textLength + this.canvas.nativeElement.offsetLeft);
-            console.log('this.x - this.textLength + this.canvas.nativeElement.offsetLeft');
-            console.log(this.x - this.textLength + this.canvas.nativeElement.offsetLeft);
-            console.log('pageY : ' + e.pageY);
-            console.log('this.y + this.textSize + this.canvas.nativeElement.offsetTop');
-            console.log(this.y + this.textSize + this.canvas.nativeElement.offsetTop);
-            console.log('this.y - this.textSize + this.canvas.nativeElement.offsetTop');
-            console.log(this.y - this.textSize + this.canvas.nativeElement.offsetTop);
+        if (e.pageX < this.canvas.nativeElement.width + this.canvas.nativeElement.offsetLeft &&
+            e.pageX > this.canvas.nativeElement.offsetLeft &&
+            e.pageY > this.canvas.nativeElement.offsetTop &&
+            e.pageY < this.canvas.nativeElement.height + this.canvas.nativeElement.offsetTop && this.dragok) {
             this.x = e.pageX - this.canvas.nativeElement.offsetLeft - (this.textLength / 2);
             this.y = e.pageY - this.canvas.nativeElement.offsetTop + 10;
-            // this.dragok = true;
             this.canvas.nativeElement.mousemove = this.myMove;
-            console.log(this.x + 'kk' + this.y);
         }
     };
     UploadComponent.prototype.onMousedown = function (event) {
@@ -1321,6 +1303,11 @@ var UploadComponent = (function () {
             this.x = e.pageX - this.canvas.nativeElement.offsetLeft - (this.textLength / 2);
             this.y = e.pageY - this.canvas.nativeElement.offsetTop + 10;
         }
+    };
+    UploadComponent.prototype.exportImage = function () {
+        var win = window.open();
+        win.document.write('<img src="' + this.canvas.nativeElement.toDataURL() + '" />');
+        return false;
     };
     return UploadComponent;
 }());
@@ -1536,7 +1523,7 @@ module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_9\">\n\t\t<h
 /***/ 325:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n    <div class=\"grid_6\">Upload File</div>\n    <div class=\"grid_6\">\n      <input type=\"file\" (change)=\"fileChangeEvent($event)\" placeholder=\"Upload file...\" />\n    </div>\n    <div class=\"grid_6\">Text</div>\n    <div class=\"grid_6\"><input type=\"text\" [(ngModel)]=\"text\"></div>\n    <div class=\"grid_6\">Text Size</div>\n    <div class=\"grid_6\"><input type=\"number\" [(ngModel)]=\"textSize\"></div>\n    <img #img src=\"{{src}}\" style='display: none;' id=\"preview\" />\n  <canvas #canvas width=\"{{width}}\" height=\"{{height}}\"></canvas>\n</div>\n"
+module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_6\">Upload File</div>\n\t<div class=\"grid_6\">\n\t\t<input type=\"file\" (change)=\"fileChangeEvent($event)\" placeholder=\"Upload file...\"/>\n\t</div>\n\t<div class=\"grid_6\">Text</div>\n\t<div class=\"grid_6\"><input type=\"text\" [(ngModel)]=\"text\"></div>\n\t<div class=\"grid_6\">Text Size</div>\n\t<div class=\"grid_6\"><input type=\"number\" [(ngModel)]=\"textSize\"></div>\n\t<img #img src=\"\" style='display: none;' id=\"preview\"/>\n\t<canvas #canvas width=\"{{width}}\" height=\"{{height}}\">Canvas not supported</canvas>\n\t<div class=\"clearfix\"></div>\n\t<button *ngIf=\"showExportButton === true\" (click)=\"exportImage()\">Export Image</button>\n</div>\n"
 
 /***/ }),
 
