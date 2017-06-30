@@ -14,7 +14,6 @@ export class UploadComponent implements AfterViewInit {
     private ctx: CanvasRenderingContext2D;
     private element: HTMLImageElement;
 
-    src: string;
     width: number;
     height: number;
     text: string;
@@ -23,14 +22,15 @@ export class UploadComponent implements AfterViewInit {
     y: number;
     dragok: boolean;
     textLength: number;
+    showExportButton: boolean;
 
     constructor(canvas: ElementRef, img: ElementRef) {
-        this.width = window.innerWidth;
-        this.height = window.innerHeight;
+        this.width = 400;
+        this.height = 300;
         this.text = 'hello uncel';
         this.textSize = 20;
-        this.x = 20;
-        this.y = 20;
+        this.x = 200;
+        this.y = 200;
         this.dragok = false;
         this.textLength = (this.text.length * this.textSize) / 2;
     }
@@ -38,13 +38,6 @@ export class UploadComponent implements AfterViewInit {
     ngAfterViewInit() {
         this.ctx = this.canvas.nativeElement.getContext('2d');
         this.element = this.img.nativeElement;
-    }
-
-    // @HostListener('window:resize')
-    resize() {
-        this.width = window.innerWidth;
-        this.height = window.innerHeight;
-        this.render();
     }
 
     clear() {
@@ -62,7 +55,7 @@ export class UploadComponent implements AfterViewInit {
         this.ctx.fillText(this.text, this.x, this.y);
     }
 
-    public fileChangeEvent(fileInput: any) {
+    fileChangeEvent(fileInput: any) {
         if (fileInput.target.files && fileInput.target.files[0]) {
             const reader = new FileReader();
 
@@ -70,7 +63,8 @@ export class UploadComponent implements AfterViewInit {
                 $('#preview').attr('src', e.target.result);
             };
             reader.readAsDataURL(fileInput.target.files[0]);
-            this.resize();
+            this.showExportButton = true;
+            this.render();
         }
     }
 
@@ -82,31 +76,16 @@ export class UploadComponent implements AfterViewInit {
 
     @HostListener('mousemove', ['$event'])
     onMousemove(e) {
-/*        console.log(this.canvas);
-        console.log('PageX : ' + e.pageX);
-        console.log('this.x + this.textLength + this.canvas.nativeElement.offsetLeft');
-        console.log( this.x + this.textLength + this.canvas.nativeElement.offsetLeft);
-
-        console.log('this.x - this.textLength + this.canvas.nativeElement.offsetLeft');
-        console.log(this.x - this.textLength + this.canvas.nativeElement.offsetLeft);
-
-        console.log('this.y + this.textSize + this.canvas.nativeElement.offsetTop');
-        console.log(this.y + this.textSize + this.canvas.nativeElement.offsetTop);
-
-        console.log('this.y - this.textSize + this.canvas.nativeElement.offsetTop');
-        console.log(this.y - this.textSize + this.canvas.nativeElement.offsetTop);*/
-
-        if (e.pageX < this.x + this.textLength + this.canvas.nativeElement.offsetLeft &&
-            e.pageX > this.x - this.textLength + this.canvas.nativeElement.offsetLeft &&
-            e.pageY < this.y + this.textSize + this.canvas.nativeElement.offsetTop &&
-            e.pageY > this.y - this.textSize + this.canvas.nativeElement.offsetTop && this.dragok) {
+        if (e.pageX < this.canvas.nativeElement.width + this.canvas.nativeElement.offsetLeft &&
+            e.pageX > this.canvas.nativeElement.offsetLeft &&
+            e.pageY > this.canvas.nativeElement.offsetTop &&
+            e.pageY < this.canvas.nativeElement.height + this.canvas.nativeElement.offsetTop && this.dragok) {
             this.x = e.pageX - this.canvas.nativeElement.offsetLeft - (this.textLength / 2);
             this.y = e.pageY - this.canvas.nativeElement.offsetTop + 10;
-            this.dragok = true;
             this.canvas.nativeElement.mousemove = this.myMove;
-            console.log(this.x + 'kk' + this.y);
         }
     }
+
     @HostListener('mousedown', ['$event'])
     onMousedown(event) {
         this.dragok = true;
@@ -117,5 +96,11 @@ export class UploadComponent implements AfterViewInit {
             this.x = e.pageX - this.canvas.nativeElement.offsetLeft - (this.textLength / 2);
             this.y = e.pageY - this.canvas.nativeElement.offsetTop + 10;
         }
+    }
+
+    exportImage() {
+        const win = window.open();
+        win.document.write('<img src="' + this.canvas.nativeElement.toDataURL() + '" />');
+        return false;
     }
 }

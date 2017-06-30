@@ -1,12 +1,14 @@
 <div class="container_12">
-    <div class="grid_6">Upload File</div>
-    <div class="grid_6">
-      <input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..." />
-    </div>
-    <div class="grid_6">Text</div>
-    <div class="grid_6"><input type="text" [(ngModel)]="text"></div>
-    <div class="grid_6">Text Size</div>
-    <div class="grid_6"><input type="number" [(ngModel)]="textSize"></div>
-    <img #img src="{{src}}" style='display: none;' id="preview" />
-  <canvas #canvas width="{{width}}" height="{{height}}"></canvas>
+	<div class="grid_6">Upload File</div>
+	<div class="grid_6">
+		<input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file..."/>
+	</div>
+	<div class="grid_6">Text</div>
+	<div class="grid_6"><input type="text" [(ngModel)]="text"></div>
+	<div class="grid_6">Text Size</div>
+	<div class="grid_6"><input type="number" [(ngModel)]="textSize"></div>
+	<img #img src="" style='display: none;' id="preview"/>
+	<canvas #canvas width="{{width}}" height="{{height}}">Canvas not supported</canvas>
+	<div class="clearfix"></div>
+	<button *ngIf="showExportButton === true" (click)="exportImage()">Export Image</button>
 </div>
