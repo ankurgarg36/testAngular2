@@ -27,7 +27,7 @@ export class UploadComponent implements AfterViewInit {
     constructor(canvas: ElementRef, img: ElementRef) {
         this.width = 400;
         this.height = 300;
-        this.text = 'hello uncel';
+        this.text = 'India is great';
         this.textSize = 20;
         this.x = 200;
         this.y = 200;
