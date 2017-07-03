@@ -29,8 +29,7 @@ body {
 	color:#666565;
 	position:relative;
 	min-width:960px;
-	background: #000;
-	background: url(../images/bg_body.jpg) center 0 no-repeat #d6bba0;
+	background: url(../images/bg_body.jpg) center 0 no-repeat #d6bba0 !important;
 
 }
 
