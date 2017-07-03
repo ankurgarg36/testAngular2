@@ -11,7 +11,7 @@ import {BottomBlockComponent} from './bottom-block-component/bottom-block.compon
 import {TopArrivalComponent} from './top-arrival-component/top-arrival.component';
 import {APP_CONFIG, AppConfig} from '../../app-config.constants';
 import {HomeTabComponent} from './home-tab-component/home-tab.component';
-import {NgbModule, NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ProductModule} from '../product/product.module';
 import {LoadersCssModule} from 'angular2-loaders-css';
 
@@ -33,10 +33,11 @@ import {LoadersCssModule} from 'angular2-loaders-css';
     HomeRoutingModule,
     NgbModule.forRoot(),
     ReactiveFormsModule,
-    LoadersCssModule
+    LoadersCssModule,
+    NgbCarouselModule
   ],
   providers: [{provide: APP_CONFIG, useValue: AppConfig}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent]
 })
 export class HomeModule {
 }

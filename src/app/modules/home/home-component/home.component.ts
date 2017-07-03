@@ -1,39 +1,29 @@
-import {Component, OnInit, ElementRef, Inject, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, Inject} from '@angular/core';
 
-// import 'assets/js/jquery-1.11.3.min.js';
-import 'assets/js/jquery.bxslider.js';
-import {Router, NavigationEnd} from '@angular/router';
+import {NavigationEnd, Router} from '@angular/router';
+import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 
-// declare var jQuery: any;
-declare var $: any;
 
 @Component({
   moduleId: module.id,
   selector: 'home-component',
-  styleUrls : ['jquery.bxslider.css'],
   templateUrl: 'home.component.html',
-  encapsulation: ViewEncapsulation.None,
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   elementRef: ElementRef;
-
   constructor(
     @Inject(ElementRef) elementRef: ElementRef,
-    private router: Router) {
+    private router: Router,
+    config: NgbCarouselConfig
+  ) {
+    config.interval = 4000;
+    config.wrap = true;
     this.elementRef = elementRef;
     router.events.subscribe((myEvent) => {
       if (myEvent instanceof NavigationEnd) {
         window.scrollTo(0, 0);
       }
     });
-  }
-
-  ngOnInit() {
-    $(this.elementRef.nativeElement).find('.bxslider').bxSlider({
-       infiniteLoop: true,
-       hideControlOnEnd: false,
-      auto: true
-     });
   }
 }

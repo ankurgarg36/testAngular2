@@ -1,6 +1,6 @@
 <div class="container_12">
   <div class="grid_12">
-    <div class="slider-relative">
+    <!--<div class="slider-relative">
       <div class="slider-block">
         <div>
           <ul class="bxslider">
@@ -10,244 +10,36 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src="../../../../assets/images/saree1.jpg" alt="Random first slide" height="400" width="1200">
+        <!--<div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>-->
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="../../../../assets/images/saree3.jpg" alt="Random second slide" height="400" width="1200">
+        <!--<div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>-->
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="../../../../assets/images/saree4.jpg" alt="Random third slide" height="400" width="1200">
+        <!--<div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>-->
+      </ng-template>
+    </ngb-carousel>
   </div>
   <div class="clear"></div>
 
 <top-arrival></top-arrival>
 <home-tab></home-tab>
-
-  <!--<div class="grid_12">
-    <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
-      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
-        <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true"><a href="#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Sarees</a></li>
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false"><a href="#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">Suit-Salvar</a></li>
-        <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false"><a href="#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Lengha-Chunni</a></li>
-      </ul>
-      <div class="clear"></div>
-
-      &lt;!&ndash; Saree Start &ndash;&gt;
-
-      <div class="tab_cont ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-1" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-saree-detail&amp;product_code=100000003">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/saree/100000003@s40.jpg" alt="Simple Net Saree" title="Simple Net Saree">
-            </a>
-            <p class="pro-info">Simple Net Saree <a href="index.php?page=wholesalesarees-saree-detail&amp;product_code=100000003" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 8,000.00</div>
-          </div>
-        </div>
-        <div class="clear cl1"></div>
-
-      </div>
-      &lt;!&ndash; Saree End &ndash;&gt;
-
-
-      &lt;!&ndash; Suit Start &ndash;&gt;
-      <div class="tab_cont ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-2" aria-labelledby="ui-id-2" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000013">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000013@su9.jpg" alt="yellow Color Radymade Salwar Suit" title="yellow Color Radymade Salwar Suit">
-            </a>
-            <p class="pro-info">yellow Color Radymade Salwar Suit <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000013" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 4,000.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000021">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000021@su14.jpg" alt="Yellow Colour Cotton Readymade Anarkali Salwar Suits (Size - 40-Large / 42-X-Large) : Festive Collection" title="Yellow Colour Cotton Readymade Anarkali Salwar Suits (Size - 40-Large / 42-X-Large) : Festive Collection">
-            </a>
-            <p class="pro-info">Yellow Colour Cotton Readymade Anar <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000021" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 2,845.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000014">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000014@ss7.jpg" alt="Shades of Pink Colour Georgette Designer Anarkali Salwar Suits" title="Shades of Pink Colour Georgette Designer Anarkali Salwar Suits">
-            </a>
-            <p class="pro-info">Shades of Pink Colour Georgette Des <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000014" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 2,990.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000019">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000019@su12.jpg" alt="Yellow Colour Mal Cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : Festive Collection" title="Yellow Colour Mal Cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : Festive Collection">
-            </a>
-            <p class="pro-info">Yellow Colour Mal Cotton Readymade  <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000019" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 2,400.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000015">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000015@su10.jpg" alt="Red color Churidar Salwar Suit" title="Red color Churidar Salwar Suit">
-            </a>
-            <p class="pro-info">Red color Churidar Salwar Suit <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000015" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 5,220.00</div>
-          </div>
-        </div>
-        <div class="clear cl1"></div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000006">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000006@su6.jpg" alt="Shades of Pink Colour Anaarkali" title="Shades of Pink Colour Anaarkali">
-            </a>
-            <p class="pro-info">Shades of Pink Colour Anaarkali <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000006" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 3,500.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000009">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000009@su4.jpg" alt="Blue and Golden Colour Chanderi Cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : Festive Collection" title="Blue and Golden Colour Chanderi Cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : Festive Collection">
-            </a>
-            <p class="pro-info">Blue and Golden Colour Chanderi Cot <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000009" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 3,300.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000002">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000002@su3.jpg" alt="Suit Salwar" title="Suit Salwar">
-            </a>
-            <p class="pro-info">Suit Salwar <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000002" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 900.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000005">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000005@su5.jpg" alt="Red color Patilia Suit" title="Red color Patilia Suit">
-            </a>
-            <p class="pro-info">Red color Patilia Suit <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000005" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 2,000.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000020">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/suit/110000020@su13.jpg" alt="Black and Silvar Colour cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : KIYA Collection " title="Black and Silvar Colour cotton Readymade Salwar Suits (Size - 40-Large, 42-X-Large) : KIYA Collection ">
-            </a>
-            <p class="pro-info">Black and Silvar Colour cotton Read <a href="index.php?page=wholesalesarees-suit-detail&amp;product_code=110000020" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 4,500.00</div>
-          </div>
-        </div>
-
-      </div>
-      &lt;!&ndash; Suit End &ndash;&gt;
-
-
-
-      &lt;!&ndash; Suit Start &ndash;&gt;
-      <div class="tab_cont ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-3" aria-labelledby="ui-id-3" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000013">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000013@len13.jpg" alt="Attractive Gathered Pattern Lehenga" title="Attractive Gathered Pattern Lehenga">
-            </a>
-            <p class="pro-info">Attractive Gathered Pattern Lehenga <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000013" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 9,000.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000005">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000005@len5.jpg" alt="Maroon Net Lehenga Chunni With Patch Work" title="Maroon Net Lehenga Chunni With Patch Work">
-            </a>
-            <p class="pro-info">Maroon Net Lehenga Chunni With Patc <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000005" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 26,940.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000004">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000004@len1.jpg" alt="Maroon Net Lehenga Chunni With Patch Work" title="Maroon Net Lehenga Chunni With Patch Work">
-            </a>
-            <p class="pro-info">Maroon Net Lehenga Chunni With Patc <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000004" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 9,600.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000014">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000014@len14.jpg" alt="Graceful off white net lehenga choli" title="Graceful off white net lehenga choli">
-            </a>
-            <p class="pro-info">Graceful off white net lehenga chol <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000014" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 15,840.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000015">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000015@len15.jpeg" alt="Bridal Lehenga Choli. A Kurti style hip-hop Choli in dark bright shades" title="Bridal Lehenga Choli. A Kurti style hip-hop Choli in dark bright shades">
-            </a>
-            <p class="pro-info">Bridal Lehenga Choli. A Kurti style <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000015" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 39,000.00</div>
-          </div>
-        </div>
-        <div class="clear cl1"></div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000002">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000002@len3.jpg" alt="Dark Blue Net Lehenga Chunni With Velvet Border" title="Dark Blue Net Lehenga Chunni With Velvet Border">
-            </a>
-            <p class="pro-info">Dark Blue Net Lehenga Chunni With V <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000002" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 15,240.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000003">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000003@len2.jpg" alt="Blue Net Lehenga Chunni With Patch Work." title="Blue Net Lehenga Chunni With Patch Work.">
-            </a>
-            <p class="pro-info">Blue Net Lehenga Chunni With Patch  <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000003" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 7,800.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000008">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000008@len8.jpg" alt="Glamorous Mehendi Green Fish Cut Lehenga Choli" title="Glamorous Mehendi Green Fish Cut Lehenga Choli">
-            </a>
-            <p class="pro-info">Glamorous Mehendi Green Fish Cut Le <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000008" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 25,380.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000017">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000017@saree6.jpg" alt="Bollywood saree designer party wear bridal wedding lehenga choli" title="Bollywood saree designer party wear bridal wedding lehenga choli">
-            </a>
-            <p class="pro-info">Bollywood saree designer party wear <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000017" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 67,000.00</div>
-          </div>
-        </div>
-        <div class="product_box">
-          <div class="thumb_wrapper">
-            <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000012">
-              <img src="resize.php?w=200&amp;h=240&amp;img=uploads/lengha/120000012@len12.jpg" alt="INDIAN BOLLYWOOD STYLE DESIGNER PARTY WEAR BRIDAL WEDDING LEHENGA CHOLI " title="INDIAN BOLLYWOOD STYLE DESIGNER PARTY WEAR BRIDAL WEDDING LEHENGA CHOLI ">
-            </a>
-            <p class="pro-info">INDIAN BOLLYWOOD STYLE DESIGNER PAR <a href="index.php?page=wholesalesarees-lengha-detail&amp;product_code=120000012" style="color:red;">Read More..</a></p>
-            <div class="price_tag">Rs. 7,600.00</div>
-          </div>
-        </div>
-
-      </div>
-      &lt;!&ndash; Suit End &ndash;&gt;
-
-
-    </div>
-  </div>
--->
-
-
-
-  <div class="clear"></div>
+<div class="clear"></div>
 
 
 </div>
