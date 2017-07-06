@@ -4,6 +4,7 @@ import {MenuLinks} from '../../../app-config.constants';
 @Component({
   moduleId: module.id,
   selector: 'bottom-block',
+  styles: ['.container_12{ margin-left: 19% !important; }'],
   templateUrl: 'bottom-block.component.html'
 })
 
