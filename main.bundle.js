@@ -373,6 +373,7 @@ var BottomBlockComponent = (function () {
 BottomBlockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'bottom-block',
+        styles: ['.container_12{ margin-left: 19% !important; }'],
         template: __webpack_require__(311)
     }),
     __metadata("design:paramtypes", [])
@@ -1413,7 +1414,7 @@ module.exports = "<header-component></header-component>\n<div class=\"main\">\n 
 /***/ 311:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bottom_block\">\n  <div class=\"container_12\">\n  <div class=\"grid_2 prefix_2\">\n    <ul>\n      <li *ngFor=\"let fFink1 of footerLinks1\"><a  [routerLink]=\"fFink1.url\">{{fFink1.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink2 of footerLinks2\"><a  [routerLink]=\"fFink2.url\">{{fFink2.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink3 of footerLinks3\"><a  [routerLink]=\"fFink3.url\">{{fFink3.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <h4>Contact Us:</h4>\n    TEL: 1-800-234-5678<br><a href=\"#\">info@demolink.org</a>\n\n  </div>\n  <div class=\"clear\"></div>\n</div>\n</div>\n"
+module.exports = "<div class=\"bottom_block\">\n  <div class=\"container_12\">\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink1 of footerLinks1\"><a  [routerLink]=\"fFink1.url\">{{fFink1.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink2 of footerLinks2\"><a  [routerLink]=\"fFink2.url\">{{fFink2.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink3 of footerLinks3\"><a  [routerLink]=\"fFink3.url\">{{fFink3.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <h4>Contact Us:</h4>\n    TEL: 1-800-234-5678<br><a href=\"#\">info@demolink.org</a>\n\n  </div>\n  <div class=\"clear\"></div>\n</div>\n</div>\n"
 
 /***/ }),
 
