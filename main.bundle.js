@@ -1,13 +1,13 @@
 webpackJsonp([1,5],{
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, exports) {
 
 //# sourceMappingURL=app-config.interface.js.map
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,7 +99,7 @@ var SareesComponent = (function () {
 SareesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'sarees-component',
-        template: __webpack_require__(321)
+        template: __webpack_require__(330)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */]) === "function" && _a || Object])
 ], SareesComponent);
@@ -109,16 +109,16 @@ var _a;
 
 /***/ }),
 
-/***/ 159:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_config_constants__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_interface__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_interface__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__app_config_interface__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -143,7 +143,7 @@ var HomeService = (function () {
     function HomeService(http, config) {
         this.http = http;
         this.config = config;
-        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
+        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Headers */]({ 'Content-Type': 'application/json' });
         this.headers.append('Access-Control-Allow-Origin', 'true');
     }
     HomeService.prototype.getTopArrivals = function () {
@@ -177,7 +177,7 @@ var HomeService = (function () {
 HomeService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_3__app_config_constants__["a" /* APP_CONFIG */])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__app_config_interface__["IAppConfig"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__app_config_interface__["IAppConfig"]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__app_config_interface__["IAppConfig"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__app_config_interface__["IAppConfig"]) === "function" && _b || Object])
 ], HomeService);
 
 var _a, _b;
@@ -185,7 +185,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -203,7 +203,7 @@ var environment = {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(161);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AppConfig; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APP_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return MenuLinks; });
@@ -250,7 +250,7 @@ var Regex = {
 
 /***/ }),
 
-/***/ 214:
+/***/ 219:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -259,20 +259,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 214;
+webpackEmptyContext.id = 219;
 
 
 /***/ }),
 
-/***/ 215:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_home_home_module__ = __webpack_require__(234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_modules_home_home_module__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(161);
 
 
 
@@ -285,7 +285,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 225:
+/***/ 232:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -306,7 +306,7 @@ var AboutUsComponent = (function () {
 AboutUsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'about-us-component',
-        template: __webpack_require__(309),
+        template: __webpack_require__(318),
     })
 ], AboutUsComponent);
 
@@ -314,7 +314,7 @@ AboutUsComponent = __decorate([
 
 /***/ }),
 
-/***/ 226:
+/***/ 233:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -335,8 +335,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(310),
-        styles: [__webpack_require__(304)]
+        template: __webpack_require__(319),
+        styles: [__webpack_require__(312)]
     })
 ], AppComponent);
 
@@ -344,7 +344,7 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 227:
+/***/ 234:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -374,7 +374,7 @@ BottomBlockComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'bottom-block',
         styles: ['.container_12{ margin-left: 19% !important; }'],
-        template: __webpack_require__(311)
+        template: __webpack_require__(320)
     }),
     __metadata("design:paramtypes", [])
 ], BottomBlockComponent);
@@ -383,14 +383,14 @@ BottomBlockComponent = __decorate([
 
 /***/ }),
 
-/***/ 228:
+/***/ 235:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_config_constants__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_home_service__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_home_service__ = __webpack_require__(160);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -431,8 +431,8 @@ var ContactComponent = (function () {
 ContactComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'contact-component',
-        template: __webpack_require__(312),
-        styles: [__webpack_require__(305)],
+        template: __webpack_require__(321),
+        styles: [__webpack_require__(313)],
         providers: [__WEBPACK_IMPORTED_MODULE_3__services_home_service__["a" /* HomeService */]]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_home_service__["a" /* HomeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_home_service__["a" /* HomeService */]) === "function" && _b || Object])
@@ -443,7 +443,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 229:
+/***/ 236:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -464,7 +464,7 @@ var FooterComponent = (function () {
 FooterComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'footer-component',
-        template: __webpack_require__(313)
+        template: __webpack_require__(322)
     })
 ], FooterComponent);
 
@@ -472,7 +472,7 @@ FooterComponent = __decorate([
 
 /***/ }),
 
-/***/ 230:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -499,7 +499,7 @@ var HeaderComponent = (function () {
 HeaderComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'header-component',
-        template: __webpack_require__(314)
+        template: __webpack_require__(323)
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);
@@ -508,12 +508,12 @@ HeaderComponent = __decorate([
 
 /***/ }),
 
-/***/ 231:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__ = __webpack_require__(76);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -548,7 +548,7 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'home-component',
-        template: __webpack_require__(315),
+        template: __webpack_require__(324),
     }),
     __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["c" /* NgbCarouselConfig */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["c" /* NgbCarouselConfig */]) === "function" && _c || Object])
@@ -559,16 +559,16 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 232:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_component_home_component__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__page_not_found_component_page_not_found_component__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_component_contact_component__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_us_component_about_us_component__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_component_home_component__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__page_not_found_component_page_not_found_component__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_component_contact_component__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__about_us_component_about_us_component__ = __webpack_require__(232);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HomeRoutingModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routedComponents; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -620,7 +620,7 @@ var routedComponents = [__WEBPACK_IMPORTED_MODULE_2__home_component_home_compone
 
 /***/ }),
 
-/***/ 233:
+/***/ 240:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -684,7 +684,7 @@ __decorate([
 HomeTabComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'home-tab',
-        template: __webpack_require__(316),
+        template: __webpack_require__(325),
         providers: [__WEBPACK_IMPORTED_MODULE_1__services_product_service__["a" /* ProductService */]]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_product_service__["a" /* ProductService */]) === "function" && _a || Object])
@@ -695,33 +695,36 @@ var _a;
 
 /***/ }),
 
-/***/ 234:
+/***/ 241:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component_app_component__ = __webpack_require__(226);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_routing_module__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__header_component_header_component__ = __webpack_require__(230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_component_footer_component__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bottom_block_component_bottom_block_component__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_arrival_component_top_arrival_component__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component_app_component__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_routing_module__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__header_component_header_component__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__footer_component_footer_component__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bottom_block_component_bottom_block_component__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__top_arrival_component_top_arrival_component__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_config_constants__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_tab_component_home_tab_component__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__home_tab_component_home_tab_component__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ng_bootstrap_ng_bootstrap__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__product_product_module__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_loaders_css__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__product_product_module__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_loaders_css__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_angular2_loaders_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_angular2_loaders_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_http_service__ = __webpack_require__(250);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeModule; });
+/* unused harmony export httpReference */
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -764,16 +767,25 @@ HomeModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_14_angular2_loaders_css__["LoadersCssModule"],
             __WEBPACK_IMPORTED_MODULE_12__ng_bootstrap_ng_bootstrap__["b" /* NgbCarouselModule */]
         ],
-        providers: [{ provide: __WEBPACK_IMPORTED_MODULE_10__app_config_constants__["a" /* APP_CONFIG */], useValue: __WEBPACK_IMPORTED_MODULE_10__app_config_constants__["b" /* AppConfig */] }],
+        providers: [
+            { provide: __WEBPACK_IMPORTED_MODULE_10__app_config_constants__["a" /* APP_CONFIG */], useValue: __WEBPACK_IMPORTED_MODULE_10__app_config_constants__["b" /* AppConfig */] },
+            { provide: __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */],
+                useFactory: httpReference,
+                deps: [__WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* XHRBackend */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* RequestOptions */]]
+            }
+        ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component_app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_6__header_component_header_component__["a" /* HeaderComponent */]]
     })
 ], HomeModule);
 
+function httpReference(backend, options) {
+    return new __WEBPACK_IMPORTED_MODULE_15__services_http_service__["a" /* HttpService */](backend, options);
+}
 //# sourceMappingURL=home.module.js.map
 
 /***/ }),
 
-/***/ 235:
+/***/ 242:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -794,7 +806,7 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'page-not-found-component',
-        template: __webpack_require__(317),
+        template: __webpack_require__(326),
     })
 ], PageNotFoundComponent);
 
@@ -802,12 +814,12 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ 236:
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_home_service__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_home_service__ = __webpack_require__(160);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TopArrivalComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -836,7 +848,7 @@ TopArrivalComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'top-arrival',
         styles: ['.grid_12 { margin-top :40px }'],
-        template: __webpack_require__(318),
+        template: __webpack_require__(327),
         providers: [__WEBPACK_IMPORTED_MODULE_1__services_home_service__["a" /* HomeService */]]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_home_service__["a" /* HomeService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_home_service__["a" /* HomeService */]) === "function" && _a || Object])
@@ -847,7 +859,7 @@ var _a;
 
 /***/ }),
 
-/***/ 237:
+/***/ 244:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -936,7 +948,7 @@ var LenghaComponent = (function () {
 LenghaComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'lengha-component',
-        template: __webpack_require__(319),
+        template: __webpack_require__(328),
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */]) === "function" && _a || Object])
 ], LenghaComponent);
@@ -946,12 +958,12 @@ var _a;
 
 /***/ }),
 
-/***/ 238:
+/***/ 245:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_product_service__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -996,8 +1008,8 @@ var ProductDetailComponent = (function () {
 ProductDetailComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'product-detail',
-        template: __webpack_require__(320),
-        styles: [__webpack_require__(306)]
+        template: __webpack_require__(329),
+        styles: [__webpack_require__(314)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */]) === "function" && _c || Object])
 ], ProductDetailComponent);
@@ -1007,17 +1019,17 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 239:
+/***/ 246:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sarees_component_sarees_component__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__product_detail_component_product_detail_component__ = __webpack_require__(238);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__suit_salvar_component_suit_salvar_component__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lengha_component_lengha_component__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__upload_component_upload_component__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sarees_component_sarees_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__product_detail_component_product_detail_component__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__suit_salvar_component_suit_salvar_component__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lengha_component_lengha_component__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__upload_component_upload_component__ = __webpack_require__(249);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductRoutingModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return productRoutedComponents; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1072,15 +1084,15 @@ var productRoutedComponents = [__WEBPACK_IMPORTED_MODULE_2__sarees_component_sar
 
 /***/ }),
 
-/***/ 240:
+/***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sarees_component_sarees_component__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__product_routing_module__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sarees_component_sarees_component__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__product_routing_module__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_product_service__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ng_bootstrap_ng_bootstrap__ = __webpack_require__(76);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductModule; });
@@ -1116,7 +1128,7 @@ ProductModule = __decorate([
 
 /***/ }),
 
-/***/ 241:
+/***/ 248:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1205,7 +1217,7 @@ var SuitSalvarComponent = (function () {
 SuitSalvarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'suit-salvar-component',
-        template: __webpack_require__(322)
+        template: __webpack_require__(331)
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_product_service__["a" /* ProductService */]) === "function" && _a || Object])
 ], SuitSalvarComponent);
@@ -1215,13 +1227,11 @@ var _a;
 
 /***/ }),
 
-/***/ 242:
+/***/ 249:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UploadComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1232,7 +1242,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 var UploadComponent = (function () {
     function UploadComponent(canvas, img) {
@@ -1267,7 +1276,7 @@ var UploadComponent = (function () {
         if (fileInput.target.files && fileInput.target.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-                __WEBPACK_IMPORTED_MODULE_1_jquery__('#preview').attr('src', e.target.result);
+                $('#preview').attr('src', e.target.result);
             };
             reader.readAsDataURL(fileInput.target.files[0]);
             this.showExportButton = true;
@@ -1333,7 +1342,7 @@ __decorate([
 UploadComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'upload-component',
-        template: __webpack_require__(323),
+        template: __webpack_require__(332),
     }),
     __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _d || Object])
 ], UploadComponent);
@@ -1343,7 +1352,126 @@ var _a, _b, _c, _d;
 
 /***/ }),
 
-/***/ 304:
+/***/ 250:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_do__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_finally__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_finally___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_finally__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(51);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpService; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HttpService = (function (_super) {
+    __extends(HttpService, _super);
+    function HttpService(backend, defaultOptions) {
+        var _this = _super.call(this, backend, defaultOptions) || this;
+        _this.pendingRequests = 0;
+        _this.showLoading = false;
+        return _this;
+    }
+    HttpService.prototype.request = function (url, options) {
+        return this.intercept(_super.prototype.request.call(this, url, options));
+    };
+    HttpService.prototype.get = function (url, options) {
+        return this.intercept(_super.prototype.get.call(this, url, options));
+    };
+    HttpService.prototype.post = function (url, body, options) {
+        return this.intercept(_super.prototype.post.call(this, url, body, this.getRequestOptionArgs(options)));
+    };
+    HttpService.prototype.put = function (url, body, options) {
+        return this.intercept(_super.prototype.put.call(this, url, body, this.getRequestOptionArgs(options)));
+    };
+    HttpService.prototype.delete = function (url, options) {
+        return this.intercept(_super.prototype.delete.call(this, url, options));
+    };
+    HttpService.prototype.getRequestOptionArgs = function (options) {
+        return options;
+    };
+    HttpService.prototype.intercept = function (observable) {
+        var _this = this;
+        console.log('In the intercept routine..');
+        this.pendingRequests++;
+        return observable
+            .do(function (res) {
+            console.log('Response: ' + res);
+            _this.turnOnModal();
+        }, function (err) {
+            _this.turnOffModal();
+            console.log('Caught error: ' + err);
+        })
+            .finally(function () {
+            console.log('Finally.. delaying, though.');
+            var timer = __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"].timer(1000);
+            timer.subscribe(function (t) {
+                _this.turnOffModal();
+            });
+        });
+    };
+    HttpService.prototype.turnOnModal = function () {
+        if (!this.showLoading) {
+            this.showLoading = true;
+            $('body').spin('modal', '#FFFFFF', 'rgba(51, 51, 51, 0.1)');
+            console.log('Turned on modal');
+        }
+        this.showLoading = true;
+    };
+    HttpService.prototype.turnOffModal = function () {
+        this.pendingRequests--;
+        if (this.pendingRequests <= 0) {
+            if (this.showLoading) {
+                $('body').spin('modal', '#FFFFFF', 'rgba(51, 51, 51, 0.1)');
+            }
+            this.showLoading = false;
+        }
+        console.log('Turned off modal');
+    };
+    return HttpService;
+}(__WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]));
+HttpService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_6__angular_http__["c" /* XHRBackend */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_http__["c" /* XHRBackend */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__angular_http__["d" /* RequestOptions */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_http__["d" /* RequestOptions */]) === "function" && _b || Object])
+], HttpService);
+
+var _a, _b;
+//# sourceMappingURL=http.service.js.map
+
+/***/ }),
+
+/***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(20)(false);
@@ -1361,7 +1489,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 305:
+/***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(20)(false);
@@ -1379,7 +1507,7 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 306:
+/***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(20)(false);
@@ -1397,105 +1525,105 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 309:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <div class=\"\">\n      <loaders-css [loader]=\"'ball-pulse'\" [loaderClass]=\"'my-loader'\"></loaders-css>\n      <h3>Agency Profile</h3>\n      <img src=\"../../../../assets/images/page2_img1.jpg\" alt=\"\" class=\"img_inner fleft\">\n      <p class=\"text1\"><a href=\"#\">Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare. </a></p>\n      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>\n      <p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>\n      <div class=\"clear\"></div>\n      Duis ac iaculis odio, sed tristique arcu. Cras consequat semper augue. Praesent ut facilisis nisi. Pellentesque consequat felis leorew qwertil condimentumo placerat eros mollis vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent iaculis nisl mattis facilisis enim vitae dictumi magna. Pellentesque laoreet purus congue justo laoreet, blandit tempor leo molestie. Vivamus orci sem molestie actre pharetra non scelerisque sit amet orci. Nulla consequat neque pretium sagittis vulputate. Fusce dictum velit at diam facilisis consectetur.\n    </div>\n  </div>\n  <div class=\"grid_3\">\n    <h3>Our Principles</h3>\n    <ul class=\"list1\">\n      <li>\n        <div class=\"count\">1</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Pellentesque imperdiet. </a></div>Quisque sed quam justo. Nulla kilor congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravida telluswil. Morbi id consequat erosivamus.\n        </div>\n      </li>\n      <li>\n        <div class=\"count\">2</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Aellentesque omperdie. </a></div>Fuisque sed quam justo. Cngueteri sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravida tellus. Morbi idy consequat eros. Vivamus imperdiet\n        </div>\n      </li>\n      <li>\n        <div class=\"count\">3</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Grellentesque imperdik. </a></div>Yisque sed quam justo. Nullaongue sed turpis nec lacinia. Julla facilisi. Ut sit amet gravida tellus. Morbi idy consequat erosamus imperdiet.\n        </div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"clear\"></div>\n  <div class=\"grid_12\">\n    <div class=\"hor_sep\"></div>\n  </div>\n  <div class=\"clear\"></div>\n  <div class=\"grid_9\">\n    <h3 class=\"head1\">What We Offer</h3>\n    <p class=\"text1 tx2\">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque vehicula eu nislew teget convallis. Vivamus sit amet fringilla nibh, et fringilla elit. Ut in lacus in nulla varius pulvinar. Donec eu magna pretiu yue facilisis sem a, rutrum magna.  Fet fringilla elit. Ut in lacus in nulla varius pulvinar.</p>\n    <p>Sed dignissim est mauris. Praesent pulvinar vestibulum lorem tristique faucibus. Quisque at tincidunt sapien. Fusce scelerisque dolor nec justo tempus, sed cursus nisl interdum. Vivamus justo mi, semper non semper nec, commodo et ipsum. Integer a porta erat. Pellentesque eu egestas purus, vitae feugiat augue. Sed lobortis tristique convallis. Mauris in diam tempor, imperdiet massa ut, euismod risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin pretium eros ac semper. Aenean nec bibendum mauris, eget luctus velit. Sed sodales lectus imperdiet neque pretium ultrices. Nulla nec urna nec erat elementum tempor.</p>\n    <ul class=\"list2\">\n      <li><a href=\"#\">Fgo psu dr sit amek </a></li>\n      <li><a href=\"#\">Sem psum dr sit ametre conse</a></li>\n      <li><a href=\"#\">Rame sum dr sit ame consec</a></li>\n      <li><a href=\"#\">Bem psum dr sit ameteko </a></li>\n      <li><a href=\"#\">Nem dsum dr sit amewas </a></li>\n    </ul>\n    <ul class=\"list2\">\n      <li><a href=\"#\">Vcem psum dr sit </a></li>\n      <li><a href=\"#\">Zdfem psum dr sittr amewe </a></li>\n      <li><a href=\"#\">Game sum dr sit ame conse</a></li>\n      <li><a href=\"#\">Dem psum dr sit ametekot </a></li>\n    </ul>\n    <div class=\"clear\"></div>\n  </div>\n  <div class=\"grid_3\">\n    <h3 class=\"head1\">testimonial</h3>\n    <blockquote>\n      <p class=\"text1\"> “ Nnatoque penatibus tkamet magnis dis parturient montes, nascetur ridiculus mustro lito. Quisque vehicula eu nisleweri teget convallis. Vivamus sit amet fringilla nibt fringilla. ”</p>\n      <div class=\"bq_bot\">\n        <div class=\"text1\">Mark Johnson</div>Director of Product Management\n      </div>\n    </blockquote>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
-
-/***/ }),
-
-/***/ 310:
-/***/ (function(module, exports) {
-
-module.exports = "<header-component></header-component>\n<div class=\"main\">\n  <div class=\"content\">\n    <div class=\"ic\"></div>\n    <router-outlet></router-outlet>\n  </div>\n  <bottom-block></bottom-block>\n</div>\n<footer-component></footer-component>"
-
-/***/ }),
-
-/***/ 311:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"bottom_block\">\n  <div class=\"container_12\">\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink1 of footerLinks1\"><a  [routerLink]=\"fFink1.url\">{{fFink1.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink2 of footerLinks2\"><a  [routerLink]=\"fFink2.url\">{{fFink2.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink3 of footerLinks3\"><a  [routerLink]=\"fFink3.url\">{{fFink3.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <h4>Contact Us:</h4>\n    TEL: 1-800-234-5678<br><a href=\"#\">info@demolink.org</a>\n\n  </div>\n  <div class=\"clear\"></div>\n</div>\n</div>\n"
-
-/***/ }),
-
-/***/ 312:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3>Stay in Touch</h3>\n    <div class=\"map\">\n      <figure class=\"img_inner fleft\">\n        <iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://maps.google.com/maps/ms?msa=0&amp;msid=203713593458754817008.0004ee93021186694bc6a&amp;ie=UTF8&amp;t=m&amp;ll=28.570813,77.326112&amp;spn=0.013191,0.018282&amp;z=15&amp;output=embed\"></iframe><br /><small>View <a href=\"https://maps.google.com/maps/ms?msa=0&amp;msid=203713593458754817008.0004ee93021186694bc6a&amp;ie=UTF8&amp;t=m&amp;ll=28.570813,77.326112&amp;spn=0.013191,0.018282&amp;z=15&amp;source=embed\" style=\"color:#0000FF;text-align:left\">28.551957, 77.388954</a> in a larger map</small>\n      </figure>\n      <address>\n        <dl>\n          <dt>\n            8901 Marmora Road,<br>\n            Glasgow, D04 89GR.\n          </dt>\n          <dd><span>Freephone:</span>+1 800 559 6580</dd>\n          <dd><span>Telephone:</span>+1 800 603 6035</dd>\n          <dd><span>FAX:</span>+1 800 889 9898</dd>\n          <dd>E-mail: <a href=\"#\" class=\"link-1\">mail@demolink.org</a></dd>\n        </dl>\n      </address>\n      <address class=\"mb0\">\n        <dl>\n          <dt>\n            9870 St Vincent Place,<br>\n            Glasgow, DC 45 Fr 45.\n          </dt>\n          <dd><span>Freephone:</span>+1 800 559 6580</dd>\n          <dd><span>Telephone:</span>+1 800 603 6035</dd>\n          <dd><span>FAX:</span>+1 800 889 9898</dd>\n          <dd>E-mail: <a href=\"#\" class=\"link-1\">mail@demolink.org</a></dd>\n        </dl>\n      </address>\n    </div>\n  </div>\n  <div class=\"grid_3\">\n    <h3>Contact Us</h3>\n      <form novalidate (ngSubmit)=\"onSubmit(contact)\" [formGroup]=\"contact\" id=\"form\">\n      <div class=\"success_wrapper\">\n        <div class=\"success\">Contact form submitted!<br>\n          <strong>We will be in touch soon.</strong> </div></div>\n      <fieldset>\n        <label class=\"name\">\n          <input type=\"text\" placeholder=\"Your full name\" formControlName=\"name\">\n          <br class=\"clear\">\n          <span class=\"error error-empty\" *ngIf=\"contact.get('name').hasError('required') && contact.get('name').touched\">*This field is required.</span>\n        </label>\n        <label class=\"email\">\n          <input type=\"text\" placeholder=\"Email\" formControlName=\"email\">\n          <br class=\"clear\">\n          <!--<span class=\"error error-empty\"></span>-->\n          <span class=\"error error-empty\"  *ngIf=\"contact.get('email').hasError('required') && contact.get('email').touched\">*This field is required.</span>\n          <span class=\"error error-empty\"  *ngIf=\"contact.get('email').hasError('pattern') && contact.get('email').touched\">*This is not a valid email address.</span> </label>\n        <label class=\"subject\">\n          <input type=\"text\" placeholder=\"Subject\" formControlName=\"subject\">\n          <br class=\"clear\">\n          <span class=\"error error-empty\" *ngIf=\"contact.get('subject').hasError('required') && contact.get('subject').touched\">*This field is required.</span> </label>\n        <label class=\"message\">\n          <textarea formControlName=\"message\" placeholder=\"Message\">Message</textarea>\n          <br class=\"clear\">\n          <!--<span class=\"error\">*The message is too short.</span> -->\n          <span class=\"error error-empty\" *ngIf=\"contact.get('message').hasError('required') && contact.get('message').touched\">*This field is required.</span>\n          <span class=\"error error-empty\" *ngIf=\"contact.get('message').hasError('minlength') && contact.get('message').touched\">*The message is too short.</span>\n        </label>\n        <div class=\"clear\"></div>\n        <div class=\"btns\">\n          <a data-type=\"reset\" class=\"btn\">Clear</a>\n          <div class=\"none\"></div>\n          <button type=\"submit\" class=\"btn mybtn\" [disabled]=\"contact.invalid\">Send</button>\n          <div class=\"clear\"></div>\n        </div></fieldset></form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
-
-/***/ }),
-
-/***/ 313:
-/***/ (function(module, exports) {
-
-module.exports = "\n<footer>\n  <div class=\"container_12\">\n    <div class=\"grid_12\">\n      <div class=\"socials\">\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n      </div>\n      <div class=\"copy\">\n        YourCompany &copy; 2014| <a href=\"#\">Privacy Policy</a> | Website designed & developed  by <a href=\"http://www.ssoftware.in/\" rel=\"nofollow\" target=\"_blank\">Sun Software Remedies </a>.\n      </div></div>\n    <div class=\"clear\"></div>\n  </div>\n\n</footer>\n"
-
-/***/ }),
-
-/***/ 314:
-/***/ (function(module, exports) {
-
-module.exports = "<header>\n  <div class=\"container_12\">\n    <div style=\"margin:10px 0px 0px 0px;\">\n      <img src=\"../../../../assets/images/logo.jpeg\" alt=\"wholesalesarees logo\" style=\"height:120px;\"></div>\n    <div class=\"menu_block\">\n      <nav>\n        <ul class=\"sf-menu\">\n          <li *ngFor=\"let menu of menuLinks\">\n            <a  [routerLink]=\"menu.url\" routerLinkActive=\"current\" >{{menu.text}}</a>\n          </li>\n        </ul>\n      </nav>\n      <div class=\"clear\"></div>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</header>\n"
-
-/***/ }),
-
-/***/ 315:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <!--<div class=\"slider-relative\">\n      <div class=\"slider-block\">\n        <div>\n          <ul class=\"bxslider\">\n            <li><img src=\"../../../../assets/images/saree1.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n            <li><img src=\"../../../../assets/images/saree3.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n            <li><img src=\"../../../../assets/images/saree4.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n          </ul>\n        </div>\n      </div>\n    </div>-->\n    <ngb-carousel>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree1.jpg\" alt=\"Random first slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>First slide label</h3>\n          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>\n        </div>-->\n      </ng-template>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree3.jpg\" alt=\"Random second slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>Second slide label</h3>\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n        </div>-->\n      </ng-template>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree4.jpg\" alt=\"Random third slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>Third slide label</h3>\n          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>\n        </div>-->\n      </ng-template>\n    </ngb-carousel>\n  </div>\n  <div class=\"clear\"></div>\n\n<top-arrival></top-arrival>\n<home-tab></home-tab>\n<div class=\"clear\"></div>\n\n\n</div>\n<!-- Slider Starts -->\n<!-- Slider Ends -->\n"
-
-/***/ }),
-
-/***/ 316:
-/***/ (function(module, exports) {
-
-module.exports = "<ngb-tabset (tabChange)=\"getProducts($event)\">\n\t<ngb-tab title=\"Sarees\" [id]=\"productCategory.saree\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\">\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\"\n                 height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Suit Salvar\" [id]=\"productCategory.suit\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Lengha\" [id]=\"productCategory.lengha\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n</ngb-tabset>\n<!--<ng2-tab\n  selected=\"saree\"\n  selected-index-class=\"selected\"\n  selected-contents-class=\"fadeIn animated\">\n  <div class=\"tabs\" id=\"tabs\">\n    <div index=\"saree\">Sarees</div>\n    <div index=\"suit\">Suit Salvar</div>\n    <div index=\"lengha\">Lengha</div>\n  </div>\n  <div class=\"tab-contents\">\n\n    &lt;!&ndash;Saree Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"saree\">\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\" >\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\" height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n    </div>\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"suit\">\n     <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"lengha\">\n       <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n  </div>\n</ng2-tab>-->\n"
-
-/***/ }),
-
-/***/ 317:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <div class=\"\">\n      <h3>Page not found(#404)</h3>\n     </div>\n  </div>\n\n  <div class=\"clear\"></div>\n\n\n\n  <div class=\"clear\"></div>\n</div>\n"
-
-/***/ }),
-
 /***/ 318:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <h3>Top Arrivals</h3>\n  </div>\n  <div class=\"boxes\">\n    <div class=\"grid_4\" *ngFor=\"let tp of topArrivals\">\n      <figure>\n        <div>\n          <img [src]=\"'//' +tp.imagePath\" alt=\"{{tp.productTitle}}\" title=\"{{tp.productTitle}}\" height=\"350\" width=\"350\">\n        </div>\n        <figcaption>\n          <h3>{{tp.categoryTitle}}</h3>\n          {{tp.detail}}\n          <a routerLink=\"{{tp.url}}\" class=\"btn\">Details</a>\n        </figcaption>\n      </figure>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</div>\n<div class=\"clear\"></div>\n"
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <div class=\"\">\n      <h3>Agency Profile</h3>\n      <img src=\"../../../../assets/images/page2_img1.jpg\" alt=\"\" class=\"img_inner fleft\">\n      <p class=\"text1\"><a href=\"#\">Gellentesque imperdiet gerti loki holewvelit neque. Ut vestibulum mi sit amet ornare. </a></p>\n      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse jew wligulawe dolor, condimentum ac justo sed, tincidunt commodo molity wer massarete. Nulla non urnatr nisi. Donec varius lectus in vestibulum auctor. Spendisse magna veliternowe dignissim eu commodo ut vestibulum nectro quam. Pellentesque imperdiet velit neque. Ut vestibulum mi sit ametwertilo ornare consectetur. Quisque sed quamhy loi justo. Nulla congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravidatylo wtellus. Morbi id wer nolit consequat eros. </p>\n      <p>Vivamus imperdiet ante vitae lorem varius tristique meli. Phasellus tristique lectus id volutpat condimentum. Mauris quam lectus cursus at congue nec ultrices luctus orci quam lectus cursus at congue.</p>\n      <div class=\"clear\"></div>\n      Duis ac iaculis odio, sed tristique arcu. Cras consequat semper augue. Praesent ut facilisis nisi. Pellentesque consequat felis leorew qwertil condimentumo placerat eros mollis vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent iaculis nisl mattis facilisis enim vitae dictumi magna. Pellentesque laoreet purus congue justo laoreet, blandit tempor leo molestie. Vivamus orci sem molestie actre pharetra non scelerisque sit amet orci. Nulla consequat neque pretium sagittis vulputate. Fusce dictum velit at diam facilisis consectetur.\n    </div>\n  </div>\n  <div class=\"grid_3\">\n    <h3>Our Principles</h3>\n    <ul class=\"list1\">\n      <li>\n        <div class=\"count\">1</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Pellentesque imperdiet. </a></div>Quisque sed quam justo. Nulla kilor congue sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravida telluswil. Morbi id consequat erosivamus.\n        </div>\n      </li>\n      <li>\n        <div class=\"count\">2</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Aellentesque omperdie. </a></div>Fuisque sed quam justo. Cngueteri sed turpis nec lacinia. Nulla facilisi. Ut sit amet gravida tellus. Morbi idy consequat eros. Vivamus imperdiet\n        </div>\n      </li>\n      <li>\n        <div class=\"count\">3</div>\n        <div class=\"extra_wrapper\">\n          <div class=\"text1\"><a href=\"#\">Grellentesque imperdik. </a></div>Yisque sed quam justo. Nullaongue sed turpis nec lacinia. Julla facilisi. Ut sit amet gravida tellus. Morbi idy consequat erosamus imperdiet.\n        </div>\n      </li>\n    </ul>\n  </div>\n  <div class=\"clear\"></div>\n  <div class=\"grid_12\">\n    <div class=\"hor_sep\"></div>\n  </div>\n  <div class=\"clear\"></div>\n  <div class=\"grid_9\">\n    <h3 class=\"head1\">What We Offer</h3>\n    <p class=\"text1 tx2\">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque vehicula eu nislew teget convallis. Vivamus sit amet fringilla nibh, et fringilla elit. Ut in lacus in nulla varius pulvinar. Donec eu magna pretiu yue facilisis sem a, rutrum magna.  Fet fringilla elit. Ut in lacus in nulla varius pulvinar.</p>\n    <p>Sed dignissim est mauris. Praesent pulvinar vestibulum lorem tristique faucibus. Quisque at tincidunt sapien. Fusce scelerisque dolor nec justo tempus, sed cursus nisl interdum. Vivamus justo mi, semper non semper nec, commodo et ipsum. Integer a porta erat. Pellentesque eu egestas purus, vitae feugiat augue. Sed lobortis tristique convallis. Mauris in diam tempor, imperdiet massa ut, euismod risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin pretium eros ac semper. Aenean nec bibendum mauris, eget luctus velit. Sed sodales lectus imperdiet neque pretium ultrices. Nulla nec urna nec erat elementum tempor.</p>\n    <ul class=\"list2\">\n      <li><a href=\"#\">Fgo psu dr sit amek </a></li>\n      <li><a href=\"#\">Sem psum dr sit ametre conse</a></li>\n      <li><a href=\"#\">Rame sum dr sit ame consec</a></li>\n      <li><a href=\"#\">Bem psum dr sit ameteko </a></li>\n      <li><a href=\"#\">Nem dsum dr sit amewas </a></li>\n    </ul>\n    <ul class=\"list2\">\n      <li><a href=\"#\">Vcem psum dr sit </a></li>\n      <li><a href=\"#\">Zdfem psum dr sittr amewe </a></li>\n      <li><a href=\"#\">Game sum dr sit ame conse</a></li>\n      <li><a href=\"#\">Dem psum dr sit ametekot </a></li>\n    </ul>\n    <div class=\"clear\"></div>\n  </div>\n  <div class=\"grid_3\">\n    <h3 class=\"head1\">testimonial</h3>\n    <blockquote>\n      <p class=\"text1\"> “ Nnatoque penatibus tkamet magnis dis parturient montes, nascetur ridiculus mustro lito. Quisque vehicula eu nisleweri teget convallis. Vivamus sit amet fringilla nibt fringilla. ”</p>\n      <div class=\"bq_bot\">\n        <div class=\"text1\">Mark Johnson</div>Director of Product Management\n      </div>\n    </blockquote>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
 
 /***/ }),
 
 /***/ 319:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3 *ngIf=\"searchTerm==null\">LENGHA-CHUNNI</h3>\n    <h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n    <div class=\"tours gallery\">\n      <div class=\"grid_4\" *ngFor=\"let product of products;let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n      <!--<div class=\"grid_4\" *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n        <div class=\"tour\">\n          <a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n          </a>\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n            <p class=\"price\">{{product.purpose}}</p>\n            <p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n            <a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n          </div>\n        </div>\n        <div class=\"clear\" *ngIf=\"isEven==false\"></div>\n      </div>\n    </div>\n    <div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n    <div class=\"pages\" style=\"clear: both;\">\n      <ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n\n      <!--<pagination-controls (pageChange)=\"p = $event\" #api *ngIf=\"products?.length>10\"></pagination-controls>-->\n    </div>\n  </div>\n\n  <div class=\"grid_3\">\n    <h3>SEARCH LENGHA-CHUNNI</h3>\n    <form method=\"post\" id=\"form2\" class=\"form1\">\n      <label for=\"productMaterial\">\n            <span class=\"col1\">All Search Operators</span><br>\n        <span>Material</span>\n        <select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\" name=\"sel1\">\n          <option value=\"\"  selected>Select Material</option>\n          <option *ngFor=\"let pm of productMaterial\"\n                  [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>\n        <!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n          <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>-->\n      </label>\n      <label for=\"productColor\">\n        <span>Color</span>\n        <select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n          <option value=\"\" selected>Select Color</option>\n          <option *ngFor=\"let pc of productColor\"\n                  [value]=\"pc.id\" >{{pc.color}}</option>\n        </select>\n      </label>\n      <label>\n        <span>Price</span>\n        <select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n          <option value=\"\" selected>Select Pice</option>\n          <option *ngFor=\"let pp of productPrice\"\n                  [value]=\"pp.range\" >{{pp.text}}</option>\n        </select>\n      </label>\n      <div class=\"clear\"></div>\n    </form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
+module.exports = "<header-component></header-component>\n<div class=\"main\">\n  <div class=\"content\">\n    <div class=\"ic\"></div>\n    <router-outlet></router-outlet>\n  </div>\n  <bottom-block></bottom-block>\n</div>\n<footer-component></footer-component>"
 
 /***/ }),
 
 /***/ 320:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\" *ngIf=\"product!=null\">\n    <h3>{{product.productTitle}}</h3>\n\n    <div class=\"tours gallery\" >\n      <div class=\"grid_12 alpha\">\n        <div class=\"zoom-section\">\n          <div class=\"zoom-small-image\">\n            <a [href]=\"'//' +product.imagePath\" class='cloud-zoom' rel=\"tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10\">\n              <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"480\" width=\"320\">\n              </a>\n          </div>\n          <div class=\"zoom-desc\"></div>\n        </div>\n        <!--zoom-section end-->\n\n        <div class=\"tour\">\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle}}</p>\n            <p class=\"price\">Product Code:<span>{{product.productCode}}</span></p>\n            <p class=\"price\">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>\n            <p class=\"price\">Material Type: <span>{{product.material}}</span></p>\n            <p class=\"price\">Color: <span>{{product.color}}</span></p>\n            <p class=\"price\">Purpose: <span>{{product.purpose}}</span></p>\n            <p class=\"price\">Description: <span>{{product.detail}}</span></p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"grid_12\" *ngIf=\"productSuggestions!=null\">\n        <h3>May we also suggest</h3>\n        <div class=\"product_box\" *ngFor=\"let suggestion of productSuggestions;let i=index;\">\n          <div class=\"thumb_wrapper_detail\">\n            <a routerLink=\"{{suggestion.url}}\" title=\"{{suggestion.productTitle}}; \">\n              <img [src]=\"'//' +suggestion.imagePath\" alt=\"{{suggestion.productTitle}}\" title=\"{{suggestion.productTitle}}\" height=\"240\" width=\"200\">\n            </a>\n            <div class=\"price_inner_tag\">{{product.price | currency:'INR':true}}</div>\n            <p class=\"pro-info\">{{product.productTitle | slice:0:18}}\n              <a routerLink=\"{{suggestion.url}}\" title=\"{{suggestion.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"i%5==0\"></div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"clear\"></div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--\n\n\n\n<div class=\"container_12\">\n<div class=\"grid_12\">\n  <h3>{{product.productTitle}}</h3>\n  <div class=\"tours gallery\">\n    <div class=\"grid_12 alpha\">\n      <div class=\"zoom-section\">\n        <div class=\"zoom-small-image\">\n          <div id=\"wrap\" style=\"top:0px;z-index:9999;position:relative;\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n            &lt;!&ndash;<a href=\"resize.php?w=768&amp;h=1024&amp; img=uploads/saree/100000001@s35.jpg\" class=\"cloud-zoom\" rel=\"tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10\" style=\"position: relative; display: block;\"><img src=\"resize.php?w=320&amp;h=480&amp;img=uploads/saree/100000001@s35.jpg\" title=\"Saffon Simple Saree\" alt=\"Saffon Simple Saree\" style=\"display: block;\"></a><div class=\"mousetrap\" style=\"background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 320px; height: 480px; left: 0px; top: 0px; cursor: move;\"></div></div>&ndash;&gt;\n        </div>\n        <div class=\"zoom-desc\">\n        </div>\n      </div>\n\n      <div class=\"tour\">\n        <div class=\"extra_wrapper\">\n          <p class=\"text1\">Saffon Simple Saree</p>\n          <p class=\"price\">Product Code:<span>{{product.productCode}}</span></p>\n          <p class=\"price\">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>\n          <p class=\"price\">Material Type: <span>{{product.material}}</span></p>\n          <p class=\"price\">Color: <span>{{product.color}}</span></p>\n          <p class=\"price\">Purpose: <span>{{product.purpose}}</span></p>\n          <p class=\"price\">Description: <span>{{product.detail}}</span></p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"grid_12\">\n      <h3>May we also suggest</h3>\n      <div class=\"product_box\">\n        <div class=\"thumb_wrapper_detail\">\n          <a href=\"index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010\">\n            <img src=\"resize.php?w=200&amp;h=240&amp;img=uploads/saree/100000010@s43.jpg\" title=\"Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection\" alt=\"Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection\">\n          </a>\n          <div class=\"price_inner_tag\">Rs. 8,500.00</div>\n          <p class=\"pro-info\">Black and Cream Colour Chiffon Material  <a href=\"index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010\" style=\"color:red;\">Read More..</a></p>\n\n        </div>\n      </div>\n    </div>\n\n    </div>\n  </div>\n\n  <div class=\"clear\"></div>\n</div>\n</div>\n-->\n"
+module.exports = "<div class=\"bottom_block\">\n  <div class=\"container_12\">\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink1 of footerLinks1\"><a  [routerLink]=\"fFink1.url\">{{fFink1.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink2 of footerLinks2\"><a  [routerLink]=\"fFink2.url\">{{fFink2.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <ul>\n      <li *ngFor=\"let fFink3 of footerLinks3\"><a  [routerLink]=\"fFink3.url\">{{fFink3.text}}</a></li>\n    </ul>\n  </div>\n  <div class=\"grid_2\">\n    <h4>Contact Us:</h4>\n    TEL: 1-800-234-5678<br><a href=\"#\">info@demolink.org</a>\n\n  </div>\n  <div class=\"clear\"></div>\n</div>\n</div>\n"
 
 /***/ }),
 
 /***/ 321:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3 *ngIf=\"searchTerm==null\">Sarees</h3>\n    <h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n    <div class=\"tours gallery\">\n      <div class=\"grid_4\" *ngFor=\"let product of products;let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n      <!--<div class=\"grid_4\" *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n        <div class=\"tour\">\n          <a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n          </a>\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n            <p class=\"price\">{{product.purpose}}</p>\n            <p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n            <a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n          </div>\n        </div>\n        <div class=\"clear\" *ngIf=\"isEven==false\"></div>\n      </div>\n    </div>\n    <div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n    <div class=\"pages\" style=\"clear: both;\">\n      <ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n    </div>\n  </div>\n\n  <div class=\"grid_3\">\n    <h3>SEARCH Sarees</h3>\n    <form method=\"post\" id=\"form2\" class=\"form1\">\n      <label for=\"productMaterial\">\n            <span class=\"col1\">All Search Operators</span><br>\n        <span>Material</span>\n        <select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\" name=\"sel1\">\n          <option value=\"\"  selected>Select Material</option>\n          <option *ngFor=\"let pm of productMaterial\"\n                  [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>\n        <!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n          <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>-->\n      </label>\n      <label for=\"productColor\">\n        <span>Color</span>\n        <select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n          <option value=\"\" selected>Select Color</option>\n          <option *ngFor=\"let pc of productColor\"\n                  [value]=\"pc.id\" >{{pc.color}}</option>\n        </select>\n      </label>\n      <label>\n        <span>Price</span>\n        <select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n          <option value=\"\" selected>Select Pice</option>\n          <option *ngFor=\"let pp of productPrice\"\n                  [value]=\"pp.range\" >{{pp.text}}</option>\n        </select>\n      </label>\n      <div class=\"clear\"></div>\n    </form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3>Stay in Touch</h3>\n    <div class=\"map\">\n      <figure class=\"img_inner fleft\">\n        <iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https://maps.google.com/maps/ms?msa=0&amp;msid=203713593458754817008.0004ee93021186694bc6a&amp;ie=UTF8&amp;t=m&amp;ll=28.570813,77.326112&amp;spn=0.013191,0.018282&amp;z=15&amp;output=embed\"></iframe><br /><small>View <a href=\"https://maps.google.com/maps/ms?msa=0&amp;msid=203713593458754817008.0004ee93021186694bc6a&amp;ie=UTF8&amp;t=m&amp;ll=28.570813,77.326112&amp;spn=0.013191,0.018282&amp;z=15&amp;source=embed\" style=\"color:#0000FF;text-align:left\">28.551957, 77.388954</a> in a larger map</small>\n      </figure>\n      <address>\n        <dl>\n          <dt>\n            8901 Marmora Road,<br>\n            Glasgow, D04 89GR.\n          </dt>\n          <dd><span>Freephone:</span>+1 800 559 6580</dd>\n          <dd><span>Telephone:</span>+1 800 603 6035</dd>\n          <dd><span>FAX:</span>+1 800 889 9898</dd>\n          <dd>E-mail: <a href=\"#\" class=\"link-1\">mail@demolink.org</a></dd>\n        </dl>\n      </address>\n      <address class=\"mb0\">\n        <dl>\n          <dt>\n            9870 St Vincent Place,<br>\n            Glasgow, DC 45 Fr 45.\n          </dt>\n          <dd><span>Freephone:</span>+1 800 559 6580</dd>\n          <dd><span>Telephone:</span>+1 800 603 6035</dd>\n          <dd><span>FAX:</span>+1 800 889 9898</dd>\n          <dd>E-mail: <a href=\"#\" class=\"link-1\">mail@demolink.org</a></dd>\n        </dl>\n      </address>\n    </div>\n  </div>\n  <div class=\"grid_3\">\n    <h3>Contact Us</h3>\n      <form novalidate (ngSubmit)=\"onSubmit(contact)\" [formGroup]=\"contact\" id=\"form\">\n      <div class=\"success_wrapper\">\n        <div class=\"success\">Contact form submitted!<br>\n          <strong>We will be in touch soon.</strong> </div></div>\n      <fieldset>\n        <label class=\"name\">\n          <input type=\"text\" placeholder=\"Your full name\" formControlName=\"name\">\n          <br class=\"clear\">\n          <span class=\"error error-empty\" *ngIf=\"contact.get('name').hasError('required') && contact.get('name').touched\">*This field is required.</span>\n        </label>\n        <label class=\"email\">\n          <input type=\"text\" placeholder=\"Email\" formControlName=\"email\">\n          <br class=\"clear\">\n          <!--<span class=\"error error-empty\"></span>-->\n          <span class=\"error error-empty\"  *ngIf=\"contact.get('email').hasError('required') && contact.get('email').touched\">*This field is required.</span>\n          <span class=\"error error-empty\"  *ngIf=\"contact.get('email').hasError('pattern') && contact.get('email').touched\">*This is not a valid email address.</span> </label>\n        <label class=\"subject\">\n          <input type=\"text\" placeholder=\"Subject\" formControlName=\"subject\">\n          <br class=\"clear\">\n          <span class=\"error error-empty\" *ngIf=\"contact.get('subject').hasError('required') && contact.get('subject').touched\">*This field is required.</span> </label>\n        <label class=\"message\">\n          <textarea formControlName=\"message\" placeholder=\"Message\">Message</textarea>\n          <br class=\"clear\">\n          <!--<span class=\"error\">*The message is too short.</span> -->\n          <span class=\"error error-empty\" *ngIf=\"contact.get('message').hasError('required') && contact.get('message').touched\">*This field is required.</span>\n          <span class=\"error error-empty\" *ngIf=\"contact.get('message').hasError('minlength') && contact.get('message').touched\">*The message is too short.</span>\n        </label>\n        <div class=\"clear\"></div>\n        <div class=\"btns\">\n          <a data-type=\"reset\" class=\"btn\">Clear</a>\n          <div class=\"none\"></div>\n          <button type=\"submit\" class=\"btn mybtn\" [disabled]=\"contact.invalid\">Send</button>\n          <div class=\"clear\"></div>\n        </div></fieldset></form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
 
 /***/ }),
 
 /***/ 322:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_9\">\n\t\t<h3 *ngIf=\"searchTerm==null\">Suit Salvar</h3>\n\t\t<h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n\t\t<div class=\"tours gallery\">\n\t\t\t<div class=\"grid_4\"\n\t\t\t     *ngFor=\"let product of products ;let isEven = even;\"\n\t\t\t     [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n\t\t\t\t<!--<div class=\"grid_4\"\n\t\t\t     *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\"\n\t\t\t     [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n\t\t\t\t<div class=\"tour\">\n\t\t\t\t\t<a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n\t\t\t\t\t\t<img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\"\n\t\t\t\t\t\t     title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n\t\t\t\t\t</a>\n\t\t\t\t\t<div class=\"extra_wrapper\">\n\t\t\t\t\t\t<p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n\t\t\t\t\t\t<p class=\"price\">{{product.purpose}}</p>\n\t\t\t\t\t\t<p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n\t\t\t\t\t\t<a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"clear\" *ngIf=\"isEven==false\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n\t\t<div class=\"pages\" style=\"clear: both;\">\n\t\t\t<ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n\t\t\t<!--<pagination-controls (pageChange)=\"p = $event\" #api *ngIf=\"products?.length>10\"></pagination-controls>-->\n\t\t</div>\n\t</div>\n\n\t<div class=\"grid_3\">\n\t\t<h3>SEARCH Suit Salvar</h3>\n\t\t<form method=\"post\" id=\"form2\" class=\"form1\">\n\t\t\t<label for=\"productMaterial\">\n\t\t\t\t<span class=\"col1\">All Search Operators</span><br>\n\t\t\t\t<span>Material</span>\n\t\t\t\t<select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\"\n\t\t\t\t        name=\"sel1\">\n\t\t\t\t\t<option value=\"\" selected>Select Material</option>\n\t\t\t\t\t<option *ngFor=\"let pm of productMaterial\"\n\t\t\t\t\t        [value]=\"pm.id\">{{pm.materialType}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t\t<!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n\t\t\t\t  <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n\t\t\t\t</select>-->\n\t\t\t</label>\n\t\t\t<label for=\"productColor\">\n\t\t\t\t<span>Color</span>\n\t\t\t\t<select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n\t\t\t\t\t<option value=\"\" selected>Select Color</option>\n\t\t\t\t\t<option *ngFor=\"let pc of productColor\"\n\t\t\t\t\t        [value]=\"pc.id\">{{pc.color}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t</label>\n\t\t\t<label>\n\t\t\t\t<span>Price</span>\n\t\t\t\t<select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n\t\t\t\t\t<option value=\"\" selected>Select Pice</option>\n\t\t\t\t\t<option *ngFor=\"let pp of productPrice\"\n\t\t\t\t\t        [value]=\"pp.range\">{{pp.text}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t</label>\n\t\t\t<div class=\"clear\"></div>\n\t\t</form>\n\t</div>\n\t<div class=\"clear\"></div>\n</div>\n"
+module.exports = "\n<footer>\n  <div class=\"container_12\">\n    <div class=\"grid_12\">\n      <div class=\"socials\">\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n        <a href=\"#\"></a>\n      </div>\n      <div class=\"copy\">\n        YourCompany &copy; 2014| <a href=\"#\">Privacy Policy</a> | Website designed & developed  by <a href=\"http://www.ssoftware.in/\" rel=\"nofollow\" target=\"_blank\">Sun Software Remedies </a>.\n      </div></div>\n    <div class=\"clear\"></div>\n  </div>\n\n</footer>\n"
 
 /***/ }),
 
 /***/ 323:
+/***/ (function(module, exports) {
+
+module.exports = "<header>\n  <div class=\"container_12\">\n    <div style=\"margin:10px 0px 0px 0px;\">\n      <img src=\"../../../../assets/images/logo.jpeg\" alt=\"wholesalesarees logo\" style=\"height:120px;\"></div>\n    <div class=\"menu_block\">\n      <nav>\n        <ul class=\"sf-menu\">\n          <li *ngFor=\"let menu of menuLinks\">\n            <a  [routerLink]=\"menu.url\" routerLinkActive=\"current\" >{{menu.text}}</a>\n          </li>\n        </ul>\n      </nav>\n      <div class=\"clear\"></div>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</header>\n"
+
+/***/ }),
+
+/***/ 324:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <!--<div class=\"slider-relative\">\n      <div class=\"slider-block\">\n        <div>\n          <ul class=\"bxslider\">\n            <li><img src=\"../../../../assets/images/saree1.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n            <li><img src=\"../../../../assets/images/saree3.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n            <li><img src=\"../../../../assets/images/saree4.jpg\" alt=\"\" height=\"400\" width=\"1024\"></li>\n          </ul>\n        </div>\n      </div>\n    </div>-->\n    <ngb-carousel>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree1.jpg\" alt=\"Random first slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>First slide label</h3>\n          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>\n        </div>-->\n      </ng-template>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree3.jpg\" alt=\"Random second slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>Second slide label</h3>\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n        </div>-->\n      </ng-template>\n      <ng-template ngbSlide>\n        <img src=\"../../../../assets/images/saree4.jpg\" alt=\"Random third slide\" height=\"400\" width=\"1200\">\n        <!--<div class=\"carousel-caption\">\n          <h3>Third slide label</h3>\n          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>\n        </div>-->\n      </ng-template>\n    </ngb-carousel>\n  </div>\n  <div class=\"clear\"></div>\n\n<top-arrival></top-arrival>\n<home-tab></home-tab>\n<div class=\"clear\"></div>\n\n\n</div>\n<!-- Slider Starts -->\n<!-- Slider Ends -->\n"
+
+/***/ }),
+
+/***/ 325:
+/***/ (function(module, exports) {
+
+module.exports = "<ngb-tabset (tabChange)=\"getProducts($event)\">\n\t<ngb-tab title=\"Sarees\" [id]=\"productCategory.saree\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\">\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\"\n                 height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Suit Salvar\" [id]=\"productCategory.suit\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n\t<ngb-tab title=\"Lengha\" [id]=\"productCategory.lengha\">\n\t\t<ng-template ngbTabContent>\n      <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n\t\t</ng-template>\n\t</ngb-tab>\n</ngb-tabset>\n<!--<ng2-tab\n  selected=\"saree\"\n  selected-index-class=\"selected\"\n  selected-contents-class=\"fadeIn animated\">\n  <div class=\"tabs\" id=\"tabs\">\n    <div index=\"saree\">Sarees</div>\n    <div index=\"suit\">Suit Salvar</div>\n    <div index=\"lengha\">Lengha</div>\n  </div>\n  <div class=\"tab-contents\">\n\n    &lt;!&ndash;Saree Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"saree\">\n      <span *ngFor=\"let tabSaree of pSaree;let i=index;\">\n      <div class=\"product_box\" >\n        <div class=\"thumb_wrapper\">\n          <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}};\">\n            <img [src]=\"'//' +tabSaree.imagePath\" alt=\"{{tabSaree.productTitle}}\" title=\"{{tabSaree.productTitle}}\" height=\"240\" width=\"200\">\n          </a>\n          <p class=\"pro-info\">{{tabSaree.productTitle | slice:0:18}}\n            <a routerLink=\"{{tabSaree.url}}\" title=\"{{tabSaree.productTitle}}\" style=\"color:red;\">Read More</a>\n          </p>\n          <div class=\"price_tag\">{{tabSaree.price | currency:'INR':true}}</div>\n        </div>\n      </div>\n      <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n        </span>\n    </div>\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"suit\">\n     <span *ngFor=\"let tabSuit of pSuit;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}};\">\n              <img [src]=\"'//' +tabSuit.imagePath\" alt=\"{{tabSuit.productTitle}}\" title=\"{{tabSuit.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabSuit.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabSuit.url}}\" title=\"{{tabSuit.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabSuit.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n\n    &lt;!&ndash;Suit Start&ndash;&gt;\n    <div class=\"tab_cont\" contents=\"lengha\">\n       <span *ngFor=\"let tabLengha of pLengha;let i=index;\">\n        <div class=\"product_box\">\n          <div class=\"thumb_wrapper\">\n            <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}};\">\n              <img [src]=\"'//' +tabLengha.imagePath\" alt=\"{{tabLengha.productTitle}}\" title=\"{{tabLengha.productTitle}}\"\n                   height=\"240\" width=\"200\">\n            </a>\n            <p class=\"pro-info\">{{tabLengha.productTitle | slice:0:18}}\n              <a routerLink=\"{{tabLengha.url}}\" title=\"{{tabLengha.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n            <div class=\"price_tag\">{{tabLengha.price | currency:'INR':true}}</div>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"(i+1)%5==0 && i!=0\">{{i%5}}</div>\n    </span>\n    </div>\n\n  </div>\n</ng2-tab>-->\n"
+
+/***/ }),
+
+/***/ 326:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <div class=\"\">\n      <h3>Page not found(#404)</h3>\n     </div>\n  </div>\n\n  <div class=\"clear\"></div>\n\n\n\n  <div class=\"clear\"></div>\n</div>\n"
+
+/***/ }),
+
+/***/ 327:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\">\n    <h3>Top Arrivals</h3>\n  </div>\n  <div class=\"boxes\">\n    <div class=\"grid_4\" *ngFor=\"let tp of topArrivals\">\n      <figure>\n        <div>\n          <img [src]=\"'//' +tp.imagePath\" alt=\"{{tp.productTitle}}\" title=\"{{tp.productTitle}}\" height=\"350\" width=\"350\">\n        </div>\n        <figcaption>\n          <h3>{{tp.categoryTitle}}</h3>\n          {{tp.detail}}\n          <a routerLink=\"{{tp.url}}\" class=\"btn\">Details</a>\n        </figcaption>\n      </figure>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</div>\n<div class=\"clear\"></div>\n"
+
+/***/ }),
+
+/***/ 328:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3 *ngIf=\"searchTerm==null\">LENGHA-CHUNNI</h3>\n    <h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n    <div class=\"tours gallery\">\n      <div class=\"grid_4\" *ngFor=\"let product of products;let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n      <!--<div class=\"grid_4\" *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n        <div class=\"tour\">\n          <a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n          </a>\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n            <p class=\"price\">{{product.purpose}}</p>\n            <p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n            <a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n          </div>\n        </div>\n        <div class=\"clear\" *ngIf=\"isEven==false\"></div>\n      </div>\n    </div>\n    <div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n    <div class=\"pages\" style=\"clear: both;\">\n      <ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n\n      <!--<pagination-controls (pageChange)=\"p = $event\" #api *ngIf=\"products?.length>10\"></pagination-controls>-->\n    </div>\n  </div>\n\n  <div class=\"grid_3\">\n    <h3>SEARCH LENGHA-CHUNNI</h3>\n    <form method=\"post\" id=\"form2\" class=\"form1\">\n      <label for=\"productMaterial\">\n            <span class=\"col1\">All Search Operators</span><br>\n        <span>Material</span>\n        <select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\" name=\"sel1\">\n          <option value=\"\"  selected>Select Material</option>\n          <option *ngFor=\"let pm of productMaterial\"\n                  [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>\n        <!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n          <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>-->\n      </label>\n      <label for=\"productColor\">\n        <span>Color</span>\n        <select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n          <option value=\"\" selected>Select Color</option>\n          <option *ngFor=\"let pc of productColor\"\n                  [value]=\"pc.id\" >{{pc.color}}</option>\n        </select>\n      </label>\n      <label>\n        <span>Price</span>\n        <select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n          <option value=\"\" selected>Select Pice</option>\n          <option *ngFor=\"let pp of productPrice\"\n                  [value]=\"pp.range\" >{{pp.text}}</option>\n        </select>\n      </label>\n      <div class=\"clear\"></div>\n    </form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_12\" *ngIf=\"product!=null\">\n    <h3>{{product.productTitle}}</h3>\n\n    <div class=\"tours gallery\" >\n      <div class=\"grid_12 alpha\">\n        <div class=\"zoom-section\">\n          <div class=\"zoom-small-image\">\n            <a [href]=\"'//' +product.imagePath\" class='cloud-zoom' rel=\"tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10\">\n              <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"480\" width=\"320\">\n              </a>\n          </div>\n          <div class=\"zoom-desc\"></div>\n        </div>\n        <!--zoom-section end-->\n\n        <div class=\"tour\">\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle}}</p>\n            <p class=\"price\">Product Code:<span>{{product.productCode}}</span></p>\n            <p class=\"price\">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>\n            <p class=\"price\">Material Type: <span>{{product.material}}</span></p>\n            <p class=\"price\">Color: <span>{{product.color}}</span></p>\n            <p class=\"price\">Purpose: <span>{{product.purpose}}</span></p>\n            <p class=\"price\">Description: <span>{{product.detail}}</span></p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"grid_12\" *ngIf=\"productSuggestions!=null\">\n        <h3>May we also suggest</h3>\n        <div class=\"product_box\" *ngFor=\"let suggestion of productSuggestions;let i=index;\">\n          <div class=\"thumb_wrapper_detail\">\n            <a routerLink=\"{{suggestion.url}}\" title=\"{{suggestion.productTitle}}; \">\n              <img [src]=\"'//' +suggestion.imagePath\" alt=\"{{suggestion.productTitle}}\" title=\"{{suggestion.productTitle}}\" height=\"240\" width=\"200\">\n            </a>\n            <div class=\"price_inner_tag\">{{product.price | currency:'INR':true}}</div>\n            <p class=\"pro-info\">{{product.productTitle | slice:0:18}}\n              <a routerLink=\"{{suggestion.url}}\" title=\"{{suggestion.productTitle}}\" style=\"color:red;\">Read More</a>\n            </p>\n          </div>\n        </div>\n        <div class=\"clear cl1\" *ngIf=\"i%5==0\"></div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"clear\"></div>\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--\n\n\n\n<div class=\"container_12\">\n<div class=\"grid_12\">\n  <h3>{{product.productTitle}}</h3>\n  <div class=\"tours gallery\">\n    <div class=\"grid_12 alpha\">\n      <div class=\"zoom-section\">\n        <div class=\"zoom-small-image\">\n          <div id=\"wrap\" style=\"top:0px;z-index:9999;position:relative;\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n            &lt;!&ndash;<a href=\"resize.php?w=768&amp;h=1024&amp; img=uploads/saree/100000001@s35.jpg\" class=\"cloud-zoom\" rel=\"tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10\" style=\"position: relative; display: block;\"><img src=\"resize.php?w=320&amp;h=480&amp;img=uploads/saree/100000001@s35.jpg\" title=\"Saffon Simple Saree\" alt=\"Saffon Simple Saree\" style=\"display: block;\"></a><div class=\"mousetrap\" style=\"background-image: url(&quot;.&quot;); z-index: 999; position: absolute; width: 320px; height: 480px; left: 0px; top: 0px; cursor: move;\"></div></div>&ndash;&gt;\n        </div>\n        <div class=\"zoom-desc\">\n        </div>\n      </div>\n\n      <div class=\"tour\">\n        <div class=\"extra_wrapper\">\n          <p class=\"text1\">Saffon Simple Saree</p>\n          <p class=\"price\">Product Code:<span>{{product.productCode}}</span></p>\n          <p class=\"price\">Best Price:<span>{{product.price | currency:'INR':true}}</span></p>\n          <p class=\"price\">Material Type: <span>{{product.material}}</span></p>\n          <p class=\"price\">Color: <span>{{product.color}}</span></p>\n          <p class=\"price\">Purpose: <span>{{product.purpose}}</span></p>\n          <p class=\"price\">Description: <span>{{product.detail}}</span></p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"grid_12\">\n      <h3>May we also suggest</h3>\n      <div class=\"product_box\">\n        <div class=\"thumb_wrapper_detail\">\n          <a href=\"index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010\">\n            <img src=\"resize.php?w=200&amp;h=240&amp;img=uploads/saree/100000010@s43.jpg\" title=\"Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection\" alt=\"Black and Cream Colour Chiffon Material Casual Sarees : Radhe Collection\">\n          </a>\n          <div class=\"price_inner_tag\">Rs. 8,500.00</div>\n          <p class=\"pro-info\">Black and Cream Colour Chiffon Material  <a href=\"index.php?page=wholesalesarees-saree-detail&amp;product_code=100000010\" style=\"color:red;\">Read More..</a></p>\n\n        </div>\n      </div>\n    </div>\n\n    </div>\n  </div>\n\n  <div class=\"clear\"></div>\n</div>\n</div>\n-->\n"
+
+/***/ }),
+
+/***/ 330:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n  <div class=\"grid_9\">\n    <h3 *ngIf=\"searchTerm==null\">Sarees</h3>\n    <h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n    <div class=\"tours gallery\">\n      <div class=\"grid_4\" *ngFor=\"let product of products;let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n      <!--<div class=\"grid_4\" *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\" [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n        <div class=\"tour\">\n          <a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n            <img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\" title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n          </a>\n          <div class=\"extra_wrapper\">\n            <p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n            <p class=\"price\">{{product.purpose}}</p>\n            <p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n            <a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n          </div>\n        </div>\n        <div class=\"clear\" *ngIf=\"isEven==false\"></div>\n      </div>\n    </div>\n    <div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n    <div class=\"pages\" style=\"clear: both;\">\n      <ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n    </div>\n  </div>\n\n  <div class=\"grid_3\">\n    <h3>SEARCH Sarees</h3>\n    <form method=\"post\" id=\"form2\" class=\"form1\">\n      <label for=\"productMaterial\">\n            <span class=\"col1\">All Search Operators</span><br>\n        <span>Material</span>\n        <select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\" name=\"sel1\">\n          <option value=\"\"  selected>Select Material</option>\n          <option *ngFor=\"let pm of productMaterial\"\n                  [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>\n        <!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n          <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n        </select>-->\n      </label>\n      <label for=\"productColor\">\n        <span>Color</span>\n        <select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n          <option value=\"\" selected>Select Color</option>\n          <option *ngFor=\"let pc of productColor\"\n                  [value]=\"pc.id\" >{{pc.color}}</option>\n        </select>\n      </label>\n      <label>\n        <span>Price</span>\n        <select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n          <option value=\"\" selected>Select Pice</option>\n          <option *ngFor=\"let pp of productPrice\"\n                  [value]=\"pp.range\" >{{pp.text}}</option>\n        </select>\n      </label>\n      <div class=\"clear\"></div>\n    </form>\n  </div>\n  <div class=\"clear\"></div>\n</div>\n"
+
+/***/ }),
+
+/***/ 331:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_9\">\n\t\t<h3 *ngIf=\"searchTerm==null\">Suit Salvar</h3>\n\t\t<h3 *ngIf=\"searchTerm\">{{searchTerm|uppercase}}</h3>\n\n\t\t<div class=\"tours gallery\">\n\t\t\t<div class=\"grid_4\"\n\t\t\t     *ngFor=\"let product of products ;let isEven = even;\"\n\t\t\t     [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">\n\t\t\t\t<!--<div class=\"grid_4\"\n\t\t\t     *ngFor=\"let product of products | paginate: { itemsPerPage: 10, currentPage: p };let isEven = even;\"\n\t\t\t     [ngClass]=\"{'omega':isEven==true,'alpha':isEven==false}\">-->\n\t\t\t\t<div class=\"tour\">\n\t\t\t\t\t<a routerLink=\"{{product.url}}\" title=\"{{product.productTitle}}\">\n\t\t\t\t\t\t<img [src]=\"'//' +product.imagePath\" alt=\"{{product.productTitle}}\"\n\t\t\t\t\t\t     title=\"{{product.productTitle}}\" height=\"240\" width=\"200\" class=\"img_inner fleft\">\n\t\t\t\t\t</a>\n\t\t\t\t\t<div class=\"extra_wrapper\">\n\t\t\t\t\t\t<p class=\"text1\">{{product.productTitle | slice:0:18}}....</p>\n\t\t\t\t\t\t<p class=\"price\">{{product.purpose}}</p>\n\t\t\t\t\t\t<p class=\"price\">Best Price <span>{{product.price | currency:'INR':true}}</span></p>\n\t\t\t\t\t\t<a routerLink=\"{{product.url}}\" class=\"btn\">Details</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"clear\" *ngIf=\"isEven==false\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class='no_product' *ngIf=\"products?.length==0\">There are no products in this collection.</div>\n\t\t<div class=\"pages\" style=\"clear: both;\">\n\t\t\t<ngb-pagination [collectionSize]=\"collectionSize\" [maxSize]=\"maxSize\" [pageSize]=\"pageSize\" [(page)]=\"currentPage\" size=\"lg\" (pageChange)=\"pageChanged($event)\"></ngb-pagination>\n\t\t\t<!--<pagination-controls (pageChange)=\"p = $event\" #api *ngIf=\"products?.length>10\"></pagination-controls>-->\n\t\t</div>\n\t</div>\n\n\t<div class=\"grid_3\">\n\t\t<h3>SEARCH Suit Salvar</h3>\n\t\t<form method=\"post\" id=\"form2\" class=\"form1\">\n\t\t\t<label for=\"productMaterial\">\n\t\t\t\t<span class=\"col1\">All Search Operators</span><br>\n\t\t\t\t<span>Material</span>\n\t\t\t\t<select [(ngModel)]=\"selectedMaterial\" id=\"productMaterial\" (ngModelChange)=\"materialFilter($event)\"\n\t\t\t\t        name=\"sel1\">\n\t\t\t\t\t<option value=\"\" selected>Select Material</option>\n\t\t\t\t\t<option *ngFor=\"let pm of productMaterial\"\n\t\t\t\t\t        [value]=\"pm.id\">{{pm.materialType}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t\t<!--<select [(ngModel)]=\"selectedMaterial\" name=\"selectedMaterial\"  id=\"productMaterial\">\n\t\t\t\t  <option *ngFor=\"let pm of productMaterial\" [value]=\"pm.id\" >{{pm.materialType}}</option>\n\t\t\t\t</select>-->\n\t\t\t</label>\n\t\t\t<label for=\"productColor\">\n\t\t\t\t<span>Color</span>\n\t\t\t\t<select [ngModel]=\"selectedColor\" id=\"productColor\" (ngModelChange)=\"colorFilter($event)\" name=\"sel2\">\n\t\t\t\t\t<option value=\"\" selected>Select Color</option>\n\t\t\t\t\t<option *ngFor=\"let pc of productColor\"\n\t\t\t\t\t        [value]=\"pc.id\">{{pc.color}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t</label>\n\t\t\t<label>\n\t\t\t\t<span>Price</span>\n\t\t\t\t<select [ngModel]=\"selectedPrice\" id=\"productPrice\" (ngModelChange)=\"priceFilter($event)\" name=\"sel3\">\n\t\t\t\t\t<option value=\"\" selected>Select Pice</option>\n\t\t\t\t\t<option *ngFor=\"let pp of productPrice\"\n\t\t\t\t\t        [value]=\"pp.range\">{{pp.text}}\n\t\t\t\t\t</option>\n\t\t\t\t</select>\n\t\t\t</label>\n\t\t\t<div class=\"clear\"></div>\n\t\t</form>\n\t</div>\n\t<div class=\"clear\"></div>\n</div>\n"
+
+/***/ }),
+
+/***/ 332:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_6\">Upload File</div>\n\t<div class=\"grid_6\">\n\t\t<input type=\"file\" (change)=\"fileChangeEvent($event)\" placeholder=\"Upload file...\"/>\n\t</div>\n\t<div class=\"grid_6\">Text</div>\n\t<div class=\"grid_6\"><input type=\"text\" [(ngModel)]=\"text\"></div>\n\t<div class=\"grid_6\">Text Size</div>\n\t<div class=\"grid_6\"><input type=\"number\" [(ngModel)]=\"textSize\"></div>\n\t<img #img src=\"\" style='display: none;' id=\"preview\"/>\n\t<canvas #canvas width=\"{{width}}\" height=\"{{height}}\">Canvas not supported</canvas>\n\t<div class=\"clearfix\"></div>\n\t<button *ngIf=\"showExportButton === true\" (click)=\"exportImage()\">Export Image</button>\n</div>\n"
@@ -1507,15 +1635,15 @@ module.exports = "<div class=\"container_12\">\n\t<div class=\"grid_6\">Upload F
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__ = __webpack_require__(334);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_config_constants__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_config_interface__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_config_interface__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_config_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__app_config_interface__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProductService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1541,13 +1669,13 @@ var ProductService = (function () {
     function ProductService(http, config) {
         this.http = http;
         this.config = config;
-        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
+        this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["e" /* Headers */]({ 'Content-Type': 'application/json' });
         this.headers.append('Access-Control-Allow-Origin', 'true');
     }
     ProductService.prototype.getProducts = function (category, limit, page) {
         if (limit === void 0) { limit = null; }
         if (page === void 0) { page = null; }
-        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* URLSearchParams */]();
+        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
         parameters.set('category', category);
         parameters.set('limit', limit);
         parameters.set('page', page);
@@ -1559,7 +1687,7 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.getProduct = function (category, code) {
-        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* URLSearchParams */]();
+        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
         parameters.set('category', category);
         parameters.set('code', code);
         return this.http.get(this.config.apiEndpoint + 'product.php', { search: parameters })
@@ -1567,14 +1695,14 @@ var ProductService = (function () {
             .catch(this.handleError);
     };
     ProductService.prototype.getProductMaterial = function (type) {
-        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* URLSearchParams */]();
+        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
         parameters.set('product_type', type);
         return this.http.get(this.config.apiEndpoint + 'material.php', { search: parameters })
             .map(function (response) { return response.json().data; })
             .catch(this.handleNewError);
     };
     ProductService.prototype.getProductColor = function (type) {
-        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* URLSearchParams */]();
+        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
         parameters.set('product_type', type);
         return this.http.get(this.config.apiEndpoint + 'color.php', { search: parameters })
             .map(function (response) { return response.json().data; })
@@ -1584,7 +1712,7 @@ var ProductService = (function () {
         if (material === void 0) { material = null; }
         if (color === void 0) { color = null; }
         if (price === void 0) { price = null; }
-        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* URLSearchParams */]();
+        var parameters = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["f" /* URLSearchParams */]();
         parameters.set('category', category);
         parameters.set('material', material);
         parameters.set('color', color);
@@ -1606,7 +1734,7 @@ var ProductService = (function () {
 ProductService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
     __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"])(__WEBPACK_IMPORTED_MODULE_4__app_config_constants__["a" /* APP_CONFIG */])),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__app_config_interface__["IAppConfig"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__app_config_interface__["IAppConfig"]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__app_config_interface__["IAppConfig"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__app_config_interface__["IAppConfig"]) === "function" && _b || Object])
 ], ProductService);
 
 var _a, _b;
@@ -1614,13 +1742,13 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 607:
+/***/ 611:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(215);
+module.exports = __webpack_require__(220);
 
 
 /***/ })
 
-},[607]);
+},[611]);
 //# sourceMappingURL=main.bundle.js.map
