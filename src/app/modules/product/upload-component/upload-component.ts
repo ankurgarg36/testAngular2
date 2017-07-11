@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, HostListener, ViewChild} from '@angular/core';
-import * as $ from 'jquery';
+declare var $: any;
 
 @Component({
     moduleId: module.id,

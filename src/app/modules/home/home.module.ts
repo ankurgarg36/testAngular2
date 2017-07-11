@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import {Http, HttpModule, RequestOptions, XHRBackend} from '@angular/http';
 
 import {AppComponent} from './app-component/app.component';
 import {HomeRoutingModule, routedComponents} from './home-routing.module';
@@ -14,6 +14,7 @@ import {HomeTabComponent} from './home-tab-component/home-tab.component';
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ProductModule} from '../product/product.module';
 import {LoadersCssModule} from 'angular2-loaders-css';
+import {HttpService} from '../../services/http.service';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,17 @@ import {LoadersCssModule} from 'angular2-loaders-css';
     LoadersCssModule,
     NgbCarouselModule
   ],
-  providers: [{provide: APP_CONFIG, useValue: AppConfig}],
+  providers: [
+      {provide: APP_CONFIG, useValue: AppConfig},
+      {provide: Http,
+        useFactory: httpReference,
+        deps: [XHRBackend, RequestOptions]
+      }
+],
   bootstrap: [AppComponent, HeaderComponent]
 })
 export class HomeModule {
+}
+export function httpReference(backend: XHRBackend, options: RequestOptions) {
+  return new HttpService(backend, options);
 }
