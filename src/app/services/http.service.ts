@@ -46,9 +46,10 @@ export class HttpService extends Http {
         console.log('In the intercept routine..');
         this.pendingRequests++;
         return observable
-            /*.catch((err, source) => {
+            .catch((err, source) => {
                 console.log('Caught error: ' + err);
-            })*/
+                return Observable.of(null);
+            })
             .do((res: Response) => {
                 console.log('Response: ' + res);
                 this.turnOnModal();

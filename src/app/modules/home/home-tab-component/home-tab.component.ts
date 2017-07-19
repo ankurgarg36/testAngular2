@@ -16,7 +16,7 @@ export class HomeTabComponent {
   public pSuit: ProductResponse;
   public pLengha: ProductResponse;
 
-  public productCategory: object;
+  public productCategory: any;
   public loadProduct: boolean;
 
   constructor(private _productService: ProductService) {
