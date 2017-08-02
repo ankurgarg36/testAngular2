@@ -23,6 +23,7 @@ const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent
   },
+  {path: 'product', loadChildren: 'app/modules/product/product.module#ProductModule'},
   { path: '**', component: PageNotFoundComponent }
 ];
 

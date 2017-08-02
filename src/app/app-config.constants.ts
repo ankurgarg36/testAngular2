@@ -13,11 +13,11 @@ export let APP_CONFIG = new InjectionToken<IAppConfig>('app.config');
 export const MenuLinks = [
     {url: '/home', text: 'Home'},
     {url: '/about-us', text: 'About Us'},
-    {url: '/sarees', text: 'Sarees'},
-    {url: '/suit', text: 'Suit-Salvar'},
-    {url: '/lengha', text: 'Lengha-Chunni'},
+    {url: '/product/sarees', text: 'Sarees'},
+    {url: '/product/suit', text: 'Suit-Salvar'},
+    {url: '/product/lengha', text: 'Lengha-Chunni'},
     {url: '/contact', text: 'Contact Us'},
-    {url: '/upload', text: 'upload'},
+    {url: '/product/upload', text: 'upload'},
 ];
 
 export const ProductType = {

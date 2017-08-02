@@ -1,17 +1,19 @@
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {BrowserModule} from '@angular/platform-browser';
-
-import {SareesComponent} from './sarees-component/sarees.component';
-import {productRoutedComponents, ProductRoutingModule} from './product-routing.module';
-import {ProductService} from '../../services/product.service';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
 
+import {productRoutedComponents, ProductRoutingModule} from './product-routing.module';
+import {ProductService} from '../../services/product.service';
+import {CommonModule} from '@angular/common';
+import {ProductComponent} from './product-component';
+
 @NgModule({
-  imports: [BrowserModule, FormsModule, ProductRoutingModule,
+  imports: [
+    FormsModule,
+    ProductRoutingModule,
+    CommonModule,
     NgbPaginationModule.forRoot()],
-  declarations: [productRoutedComponents],
-  bootstrap: [SareesComponent],
+  declarations: [productRoutedComponents, ProductComponent],
   providers: [ProductService]
 })
 

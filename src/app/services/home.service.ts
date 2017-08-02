@@ -4,7 +4,6 @@ import 'rxjs/add/operator/toPromise';
 import {TopArrival} from '../modules/home/top-arrival-component/top-arrival';
 import {APP_CONFIG} from '../app-config.constants';
 import {Contact} from '../modules/home/contact-component/contact.interface';
-// import {Observable} from 'rxjs/Observable';
 import {IAppConfig} from '../app-config.interface';
 
 @Injectable()

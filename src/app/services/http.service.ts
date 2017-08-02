@@ -59,7 +59,7 @@ export class HttpService extends Http {
             })
             .finally(() => {
                 console.log('Finally.. delaying, though.');
-                const timer = Observable.timer(1000);
+                const timer = Observable.timer(100);
                 timer.subscribe(t => {
                     this.turnOffModal();
                 });

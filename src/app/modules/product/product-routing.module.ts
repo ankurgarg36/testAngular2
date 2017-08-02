@@ -6,36 +6,43 @@ import {ProductDetailComponent} from './product-detail-component/product-detail.
 import {SuitSalvarComponent} from './suit-salvar-component/suit-salvar.component';
 import {LenghaComponent} from './lengha-component/lengha.component';
 import {UploadComponent} from './upload-component/upload-component';
+import {ProductComponent} from './product-component';
 
 const routes: Routes = [
   {
-    path: 'sarees',
-    component: SareesComponent
-  },
-  {
-    path: 'suit',
-    component: SuitSalvarComponent
-  },
-  {
-    path: 'lengha',
-    component: LenghaComponent
-  },
-  {
-    path: 'product/:product-category/:product-title/:product-code',
-    component: ProductDetailComponent
-  },
-  {
-    path: 'upload',
-    component: UploadComponent
-  },
+    path: '',
+    component: ProductComponent,
+    children: [
+      {
+        path: 'sarees',
+        component: SareesComponent
+      },
+      {
+        path: 'suit',
+        component: SuitSalvarComponent
+      },
+      {
+        path: 'lengha',
+        component: LenghaComponent
+      },
+      {
+        path: ':product-category/:product-title/:product-code',
+        component: ProductDetailComponent
+      },
+      {
+        path: 'upload',
+        component: UploadComponent
+      },
+    ]
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class ProductRoutingModule {
 }
 
 
-export const productRoutedComponents = [ SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent, UploadComponent];
+export const productRoutedComponents = [SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent, UploadComponent];

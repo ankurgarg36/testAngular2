@@ -12,7 +12,6 @@ import {TopArrivalComponent} from './top-arrival-component/top-arrival.component
 import {APP_CONFIG, AppConfig} from '../../app-config.constants';
 import {HomeTabComponent} from './home-tab-component/home-tab.component';
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {ProductModule} from '../product/product.module';
 import {LoadersCssModule} from 'angular2-loaders-css';
 import {HttpService} from '../../services/http.service';
 
@@ -30,7 +29,6 @@ import {HttpService} from '../../services/http.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ProductModule,
     HomeRoutingModule,
     NgbModule.forRoot(),
     ReactiveFormsModule,
@@ -38,12 +36,13 @@ import {HttpService} from '../../services/http.service';
     NgbCarouselModule
   ],
   providers: [
-      {provide: APP_CONFIG, useValue: AppConfig},
-      {provide: Http,
-        useFactory: httpReference,
-        deps: [XHRBackend, RequestOptions]
-      }
-],
+    {provide: APP_CONFIG, useValue: AppConfig},
+    {
+      provide: Http,
+      useFactory: httpReference,
+      deps: [XHRBackend, RequestOptions]
+    }
+  ],
   bootstrap: [AppComponent, HeaderComponent]
 })
 export class HomeModule {
