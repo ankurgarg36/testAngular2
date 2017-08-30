@@ -10,4 +10,5 @@ export class ProductResponse {
     material: string;
     purpose: string;
     color: string;
+    quantity: number;
 }

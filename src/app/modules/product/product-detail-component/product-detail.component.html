@@ -4,17 +4,12 @@
 
     <div class="tours gallery" >
       <div class="grid_12 alpha">
-        <div class="zoom-section">
-          <div class="zoom-small-image">
+        <div class="grid_4">
             <a [href]="'//' +product.imagePath" class='cloud-zoom' rel="tint:'#ff0000',tintOpacity:0.5,smoothMove:5,zoomWidth:480,adjustY:-4,adjustX:10">
               <img [src]="'//' +product.imagePath" alt="{{product.productTitle}}" title="{{product.productTitle}}" height="480" width="320">
               </a>
-          </div>
-          <div class="zoom-desc"></div>
         </div>
-        <!--zoom-section end-->
-
-        <div class="tour">
+        <div class="grid_4">
           <div class="extra_wrapper">
             <p class="text1">{{product.productTitle}}</p>
             <p class="price">Product Code:<span>{{product.productCode}}</span></p>
@@ -24,6 +19,10 @@
             <p class="price">Purpose: <span>{{product.purpose}}</span></p>
             <p class="price">Description: <span>{{product.detail}}</span></p>
           </div>
+        </div>
+        <div class="grid_2" style="text-align: right">
+            <button class="btn btn-lg btn-info btn-product" (click)="addToCart(product)">
+              <span class="glyphicon glyphicon-shopping-cart"></span> Add to bag</button>
         </div>
       </div>
 

@@ -14,6 +14,7 @@ import {HomeTabComponent} from './home-tab-component/home-tab.component';
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {LoadersCssModule} from 'angular2-loaders-css';
 import {HttpService} from '../../services/http.service';
+import {CartService} from '../../services/cart.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {HttpService} from '../../services/http.service';
       provide: Http,
       useFactory: httpReference,
       deps: [XHRBackend, RequestOptions]
-    }
+    },
+    CartService
   ],
   bootstrap: [AppComponent, HeaderComponent]
 })

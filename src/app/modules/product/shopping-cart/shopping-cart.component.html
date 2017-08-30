@@ -1,0 +1,70 @@
+<!--<div class="container_12">
+	<div class="grid_12">
+		<h3>You have {{shoppingCartItems.length}} items in your bag</h3>
+		<div *ngFor="let item of shoppingCartItems">
+			{{item.price}}
+			&lt;!&ndash;<spa-product
+				[id]="item.id"
+				[name]="item.productTitle"
+				[price]="item.price"
+				>
+			</spa-product>&ndash;&gt;
+			<button class="remove-item" (click)="removeItem(item)">Remove</button>
+		</div>
+		<p>Total: {{getTotal() | async}}</p>
+	</div>
+	<div class="clear"></div>
+</div>-->
+<div class="container">
+	<h3 *ngIf="shoppingCartItems.length==0">Your Shopping Cart is empty</h3>
+	<h3 *ngIf="shoppingCartItems.length>0">You have {{shoppingCartItems.length}} items in your bag</h3>
+	<table id="cart" class="table table-hover table-condensed" *ngIf="shoppingCartItems.length>0">
+		<thead>
+		<tr>
+			<th style="width:50%">Product</th>
+			<th style="width:10%">Price</th>
+			<th style="width:8%">Quantity</th>
+			<th style="width:22%" class="text-center">Subtotal</th>
+			<th style="width:10%"></th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor="let item of shoppingCartItems">
+			<td data-th="Product">
+				<a routerLink="{{item.url}}" title="{{item.productTitle}}; ">
+				<div class="row">
+					<div class="col-sm-2 hidden-xs">
+						<img [src]="'//' +item.imagePath" alt="{{item.productTitle}}" title="{{item.productTitle}}" class="img-responsive">
+					</div>
+					<div class="col-sm-10">
+						<h4 class="nomargin">{{item.productCode}}</h4>
+						<p>{{item.productTitle}}</p>
+					</div>
+				</div>
+				</a>
+			</td>
+			<td data-th="Price">{{item.price}}</td>
+			<td data-th="Quantity">
+				<select (change)="updateQuantity(item,$event.target.value)" class="form-control text-center">
+					<option *ngFor="let i of [1,2,3,4,5]" [selected]="i==item.quantity">{{i}}</option>
+				</select>
+			</td>
+			<td data-th="Subtotal" class="text-center">{{item.price*item.quantity}}</td>
+			<td class="actions" data-th="">
+				<button class="btn btn-danger btn-sm" (click)="removeItem(item)"><i class="glyphicon glyphicon-trash"></i></button>
+			</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr class="visible-xs">
+			<td class="text-center"><strong>Total 1.99</strong></td>
+		</tr>
+		<tr>
+			<td><a routerLink="/home" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+			<td colspan="2" class="hidden-xs"></td>
+			<td class="hidden-xs text-center"><strong>{{getTotal() | async}}</strong></td>
+			<td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+		</tr>
+		</tfoot>
+	</table>
+</div>

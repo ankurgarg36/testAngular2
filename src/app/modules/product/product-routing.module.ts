@@ -7,6 +7,7 @@ import {SuitSalvarComponent} from './suit-salvar-component/suit-salvar.component
 import {LenghaComponent} from './lengha-component/lengha.component';
 import {UploadComponent} from './upload-component/upload-component';
 import {ProductComponent} from './product-component';
+import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
         path: 'upload',
         component: UploadComponent
       },
+      {
+        path: 'cart',
+        component: ShoppingCartComponent
+      },
     ]
   }
 ];
@@ -45,4 +50,4 @@ export class ProductRoutingModule {
 }
 
 
-export const productRoutedComponents = [SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent, UploadComponent];
+export const productRoutedComponents = [SareesComponent, ProductDetailComponent, SuitSalvarComponent, LenghaComponent, UploadComponent, ShoppingCartComponent];

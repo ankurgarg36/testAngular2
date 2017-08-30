@@ -1,12 +1,24 @@
 <header>
   <div class="container_12">
     <div style="margin:10px 0px 0px 0px;">
-      <img src="../../../../assets/images/logo.jpeg" alt="wholesalesarees logo" style="height:120px;"></div>
+      <a routerLink="/home" style="display: block;float: left;">
+      <img src="../../../../assets/images/logo.jpeg" alt="wholesalesarees logo" style="height:120px;">
+    </a>
+      <a class="open-shopping-cart" routerLink="/product/cart" routerLinkActive="current">
+        <span class="cart-text">{{(shoppingCartItems$ | async).length}}</span>
+      </a>
+    </div>
+    <div class="clear"></div>
     <div class="menu_block">
       <nav>
         <ul class="sf-menu">
           <li *ngFor="let menu of menuLinks">
             <a  [routerLink]="menu.url" routerLinkActive="current" >{{menu.text}}</a>
+          </li>
+          <li>
+            <!--            <a class="open-shopping-cart" routerLink="/product/cart" routerLinkActive="current">
+              <i class="glyphicon glyphicon-shopping-cart">{{(shoppingCartItems$ | async).length}}</i>
+            </a>-->
           </li>
         </ul>
       </nav>
