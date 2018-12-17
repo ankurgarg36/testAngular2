@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://www.wholesalesarees.com/api/'
+  apiEndpoint: 'http://ankur.wholesalesarees.com/api/'
 };
